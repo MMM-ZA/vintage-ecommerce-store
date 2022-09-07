@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,800;0,900;1,400&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Playfair Display', serif;
+}
+
+body {
+  text-decoration: none;
+  width: 100%;
+}
+:root {
+  --color-primary: #006bb9;
+  --color-secondary: #30a0e0;
+  --color-tertiary: #ffc973;
+  --color-white: #FFFFFF;
+  --color-black: #000;
+  --color-offwhite: #ffe3b3;
+
+}
+h1 {
+  font-size: 50px;
+  line-height: 64px;
+}
+
+h2 {
+ font-size: 46px;
+ line-height: 54px;
+}
+
+h3 {
+  font-size: 40px;
+  line-height: 44px;
+}
+h4 {
+  font-size: 30px;
+  line-height: 34px;
+}
+.logo span {
+  background: var(--color-primary);
+  color: #fff;
+  display: inline-block;
+  line-height: 1.8;
+  padding: 0 16px;
+  font-family: 'Cinzel', serif;
+
+}
+.logo h5 {
+  color:var(--color-primary);
+  font-family: 'Cinzel', serif;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 1.3;
+}
