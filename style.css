@@ -5,19 +5,22 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Playfair Display', serif;
+  list-style: none;
+  text-decoration: none;
 }
 
 body {
-  text-decoration: none;
+
   width: 100%;
+
 }
 :root {
-  --color-primary: #006bb9;
-  --color-secondary: #30a0e0;
-  --color-tertiary: #ffc973;
+  --color-primary: #2a9d8f;
+  --color-secondary: #e9c46a;
+  --color-tertiary: #f4a261;
   --color-white: #FFFFFF;
-  --color-black: #000;
-  --color-offwhite: #ffe3b3;
+  --color-blue-grey: #264653;
+  --color-tangerine: #e76f51;
 
 }
 h1 {
@@ -39,7 +42,7 @@ h4 {
   line-height: 34px;
 }
 .logo span {
-  background: var(--color-primary);
+  background:var(--color-tangerine);
   color: #fff;
   display: inline-block;
   line-height: 1.8;
@@ -48,9 +51,192 @@ h4 {
 
 }
 .logo h5 {
-  color:var(--color-primary);
+  color:#fff;
+  text-shadow: 2px 2px 0px #2a9d8f,
+      3px 3px 0px #e9c46a,
+      4px 4px 0px #f4a261,
+      5px 5px 0px #e76f51,
+      6px 6px 0px #264653,
+      6px 6px 0px #000000;
   font-family: 'Cinzel', serif;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 30px;
   line-height: 1.3;
+}
+/* Header */
+#header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 80px;
+  background-color: var(--color-secondary);
+  box-shadow: rgba(0, 0, 0, 0.06);
+}
+
+#navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-image: linear-gradient(to right top, #2a9d8f, #4ba886, #6db27a, #91ba70, #b6c069, #c8bf66, #dabe65, #ecbc67, #eeb664, #f1af63, #f2a961, #f4a261); */
+
+}
+#navbar li {
+ padding: 0 20px;
+ position: relative;
+}
+#navbar li a{
+  font-weight: 500;
+  color: var(--color-blue-grey);
+  font-size: 16px;
+  transition: 0.3s ease;
+
+}
+#navbar li a:hover,
+#navbar li a.active {
+  color: var(--color-tangerine);
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after {
+  content: "";
+  width: 30px;
+  height: 2px;
+  background-color:var(--color-tangerine) ;
+  position: absolute;
+  bottom: -4px;
+  left: 20px;
+}
+/*Home Page*/
+#hero {
+  background-image: url(images/vintage-1.png);
+  height: 90vh;
+  width: 100%;
+  background-size: cover;
+  background-position: top 25% right 0;
+  padding: 0 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.hero-text{
+  background-color: #f4a261;
+  width: 500px;
+  height: 300px;
+  text-align: center;
+  padding-top: 15px;
+  border-radius: 30px;
+
+}
+
+#hero h4{
+  padding-bottom: 15px;
+  color: var(--color-blue-grey);
+}
+
+#hero h1 {
+  color: var(--color-primary);
+}
+#hero h2 {
+  color: var(--color-blue-grey);
+}
+
+button,
+button::after {
+  width: 180px;
+  height: 55px;
+  margin-top: 20px;
+  font-size: 25px;
+  font-family: 'Cinzel',serif;
+  font-weight:900;
+  background: linear-gradient(45deg, transparent 5%, #e9c46a 5%);
+  border: 0;
+  color: #fff;
+  letter-spacing: 3px;
+  line-height: 30px;
+  box-shadow: 6px 0px 0px #00E6F6;
+  outline: transparent;
+  position: relative;
+}
+
+button::after {
+  --slice-0: inset(50% 50% 50% 50%);
+  --slice-1: inset(80% -6px 0 0);
+  --slice-2: inset(50% -6px 30% 0);
+  --slice-3: inset(10% -6px 85% 0);
+  --slice-4: inset(40% -6px 43% 0);
+  --slice-5: inset(80% -6px 5% 0);
+
+  content: 'SHOP NOW';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, transparent 3%, #2a9d8f 3%, #2a9d8f 5%, #e76f51 5%);
+  text-shadow: -3px -3px 0px #F8F005, 3px 3px 0px #2a9d8f;
+  clip-path: var(--slice-0);
+}
+
+button:hover::after {
+  animation: 1s glitch;
+  animation-timing-function: steps(2, end);
+}
+
+@keyframes glitch {
+  0% {
+    clip-path: var(--slice-1);
+    transform: translate(-20px, -10px);
+  }
+
+  10% {
+    clip-path: var(--slice-3);
+    transform: translate(10px, 10px);
+  }
+
+  20% {
+    clip-path: var(--slice-1);
+    transform: translate(-10px, 10px);
+  }
+
+  30% {
+    clip-path: var(--slice-3);
+    transform: translate(0px, 5px);
+  }
+
+  40% {
+    clip-path: var(--slice-2);
+    transform: translate(-5px, 0px);
+  }
+
+  50% {
+    clip-path: var(--slice-3);
+    transform: translate(5px, 0px);
+  }
+
+  60% {
+    clip-path: var(--slice-4);
+    transform: translate(5px, 10px);
+  }
+
+  70% {
+    clip-path: var(--slice-2);
+    transform: translate(-10px, 10px);
+  }
+
+  80% {
+    clip-path: var(--slice-5);
+    transform: translate(20px, -10px);
+  }
+
+  90% {
+    clip-path: var(--slice-1);
+    transform: translate(-10px, 0px);
+  }
+
+  100% {
+    clip-path: var(--slice-1);
+    transform: translate(0);
+  }
 }
