@@ -202,12 +202,13 @@ button::after {
   width: 180px;
   height: 55px;
   margin-top: 20px;
-  font-size: 25px;
+  font-size: 22px;
   font-weight: 600;
   font-family: 'Chelsea Market',cursive;
   background: linear-gradient(45deg, transparent 5%, #e76f51 5%);
   border: 0;
   color: #fff;
+  text-shadow: 3px 3px 0px #264653;
   text-transform: uppercase;
   letter-spacing: 3px;
   line-height: 30px;
@@ -336,11 +337,13 @@ box-shadow: 10px -10px 0 -3px #fff, 10px -10px var(--color-tertiary),
   background-color: var(--color-secondary);
   line-height: 1;
   border-radius: 4px;
+  font-family: 'Chelsea Market', cursive;
 }
 /* featured products */
 #product-1 {
   text-align: center;
-  background-color: var(--color-tertiary);
+  background-color: #F4A261;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='187' height='187' viewBox='0 0 120 120'%3E%3Cpolygon fill='%23E76F51' fill-opacity='0.23' points='120 0 120 60 90 30 60 0 0 0 0 0 60 60 0 120 60 120 90 90 120 60 120 0'/%3E%3C/svg%3E");
 }
 
 #product-1 h2 {
@@ -362,17 +365,16 @@ box-shadow: 10px -10px 0 -3px #fff, 10px -10px var(--color-tertiary),
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  /* background-color: #f4a279; */
   padding-top: 20px;
 
 }
 
 .featured-products .product {
   position: relative;
-  width: 20rem;
-  max-width: 250px;
-  height: 20rem;
-  margin: 4rem 2.3rem;
+  width: 25rem;
+  max-width: 300px;
+  height: 25rem;
+  margin: 3rem 2rem;
 }
 
 .featured-products .product:hover .image-box {
@@ -394,9 +396,9 @@ box-shadow: 10px -10px 0 -3px #fff, 10px -10px var(--color-tertiary),
 }
 
 .image-box img {
-  width: 20rem;
-  max-width: 250px;
-  height: 20rem;
+  width:25rem;
+  max-width: 300px;
+  height: 25rem;
   object-fit: cover;
   resize: both;
   box-shadow: 34px 20px 34px rgba(0, 0, 0, 0.05);
@@ -411,7 +413,7 @@ box-shadow: 10px -10px 0 -3px #fff, 10px -10px var(--color-tertiary),
   border: 3px solid var(--color-tangerine);
   display: flex;
   justify-content: center;
-  background: rgba(237, 223, 22, 0.1);
+  background-color: #f4a279;
   z-index: 1;
   align-items: flex-end;
   transition: 0.5s ease-in-out;
@@ -448,6 +450,7 @@ box-shadow: 10px -10px 0 -3px #fff, 10px -10px var(--color-tertiary),
 #product-1 .product .description i {
   font-size: 12px;
   color: var(--color-secondary);
+  text-shadow: 1px 1px 0px #264653;
 }
 #product-1 .product .description h4{
   padding-top: 7px;
@@ -468,4 +471,42 @@ box-shadow: 10px -10px 0 -3px #fff, 10px -10px var(--color-tertiary),
  position: absolute;
  bottom: 20px;
  right: 10px;
+}
+
+#product-1 .product .cart:hover {
+ color: var(--color-primary);
+ background-color: var(--color-blue-grey);
+border: 2px solid var(--color-primary);
+}
+
+#banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url('images/banner.png');
+  width: 100%;
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+}
+#banner h4{
+  color:var(--color-secondary);
+  text-shadow: 3px 3px 0px #264653;
+  font-family: 'Chelsea Market', cursive;
+}
+#banner h2 {
+  color: var(--color-secondary);
+  text-shadow: 3px 3px 0px #264653;
+  font-family: 'Chelsea Market', cursive;
+}
+#banner h2 span {
+  color: var(--color-primary);
+  text-shadow: 4px 4px 0px #264653;
+  font-family: 'Chelsea Market', cursive;
+}
+button.explore {
+  font-size: 20px;
+  padding: 15px 30px;
+
 }
