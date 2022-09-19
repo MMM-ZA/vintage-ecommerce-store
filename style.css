@@ -478,13 +478,14 @@ box-shadow: 10px -10px 0 -3px #fff, 10px -10px var(--color-tertiary),
  background-color: var(--color-blue-grey);
 border: 2px solid var(--color-primary);
 }
+/* banner */
 
 #banner {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url('images/banner.png');
+  background-image: url('images/banner-sm1.png');
   width: 100%;
   height: 50vh;
   background-size: cover;
@@ -509,4 +510,26 @@ button.explore {
   font-size: 20px;
   padding: 15px 30px;
 
+}
+#sm-banner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#sm-banner .banner-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url('images/banner.png');
+    min-width: 500px;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+
+}
+#sm-banner h4{
+  color: #fff;
 }
