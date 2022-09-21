@@ -48,12 +48,15 @@ h6 {
 .section-p1 {
   padding: 40px 80px;
 }
+.section-p2 {
+  padding: 20px 60px;
+}
 .section-m1 {
   margin: 40px 0;
 }
 .logo span {
   background:var(--color-tangerine);
-  color: #fff;
+  color:var(--color-white);
   display: inline-block;
   line-height: 1.8;
   padding: 0 16px;
@@ -61,7 +64,7 @@ h6 {
 
 }
 .logo h5 {
-  color:#fff;
+  color:var(--color-white);
   text-shadow: 2px 2px 0px #e76f51,
       3px 3px 0px #e9c46a,
       4px 4px 0px #f4a261,
@@ -136,7 +139,9 @@ h6 {
   perspective: 40em;
   display: grid;
   transform-style: preserve-3d;
-
+}
+.hero-card-wrapper:hover button {
+  background: linear-gradient(45deg, transparent 5%, #2a9d8f 5%);
 }
 .card-text{
   background-color: #f4a261;
@@ -207,7 +212,7 @@ button::after {
   font-family: 'Chelsea Market',cursive;
   background: linear-gradient(45deg, transparent 5%, #e76f51 5%);
   border: 0;
-  color: #fff;
+  color:var(--color-white);
   text-shadow: 3px 3px 0px #264653;
   text-transform: uppercase;
   letter-spacing: 3px;
@@ -478,6 +483,12 @@ box-shadow: 10px -10px 0 -3px #fff, 10px -10px var(--color-tertiary),
  background-color: var(--color-blue-grey);
 border: 2px solid var(--color-primary);
 }
+/* new arrivals */
+#product-1.new-arrivals {
+  background-color: #E9C46A;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='152' height='152' viewBox='0 0 120 120'%3E%3Cpolygon fill='%23F6BA0A' fill-opacity='0.47' points='120 0 120 60 90 30 60 0 0 0 0 0 60 60 0 120 60 120 90 90 120 60 120 0'/%3E%3C/svg%3E");
+  padding: 40px 80px;
+}
 /* banner */
 
 #banner {
@@ -485,7 +496,7 @@ border: 2px solid var(--color-primary);
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url('images/banner-sm1.png');
+  background-image: url('images/banner/banner.png');
   width: 100%;
   height: 50vh;
   background-size: cover;
@@ -522,8 +533,8 @@ button.explore {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    background-image: url('images/banner.png');
-    min-width: 500px;
+    background-image: url('images/banner/bannersm2.jpg');
+    min-width: 550px;
     height: 50vh;
     background-size: cover;
     background-position: center;
@@ -531,5 +542,62 @@ button.explore {
 
 }
 #sm-banner h4{
+  color: var(--color-white);
+}
+#sm-banner h2 {
+  color:var(--color-white);
+}
+#sm-banner .banner-box:hover button {
+  background: linear-gradient(45deg, transparent 5%, #2a9d8f 5%);
+}
+
+#sm-banner .banner-box2{
+  background-image: url('images/banner/bannersm1.jpg');
+}
+
+#banner3 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 60px;
+}
+
+#banner3 .banner-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-image: url('images/banner/bannersm8.png');
+  min-width:30%;
+  height: 30vh;
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+#banner3 .banner-box2 {
+  background-image: url(images/banner/bannersm4.jpg);
+}
+#banner3 .banner-box3 {
+  background-image: url(images/banner/bannersm3.jpg);
+}
+#banner3 h2 {
   color: #fff;
+  font-weight: 900;
+}
+#banner3 h3 {
+  color: var(--color-white);
+  font-weight: 800;
+  font-size: 15px;
+}
+/* newsletter */
+#newsletter {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  background-image: url('images/banner/newsletter.png');
+  background-position: 20% 30%;
+  background-repeat: no-repeat;
+  background-color: var(--color-blue-grey);
 }
