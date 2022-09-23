@@ -601,3 +601,41 @@ button.explore {
   background-repeat: no-repeat;
   background-color: var(--color-blue-grey);
 }
+#newsletter h4 {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--color-white);
+}
+#newsletter p {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--color-primary);
+}
+#newsletter p span {
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--color-secondary);
+}
+
+#newsletter .form {
+  display: flex;
+  width: 40%;
+  justify-content: center;
+}
+#newsletter input {
+  height:3.125rem;
+  padding: 0 1.25em ;
+  font-size:14px;
+  width: 100%;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  outline: none;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.form-btn {
+  width: 140px;
+  height: 45px;
+  font-size: 18px;
+  font-weight: 600;
+}
