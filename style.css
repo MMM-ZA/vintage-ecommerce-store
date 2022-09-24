@@ -331,7 +331,7 @@ box-shadow: 10px -10px 0 -3px #fff, 10px -10px var(--color-tertiary),
 
 #feature .feature-box img {
   width: 100%;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 
@@ -610,17 +610,20 @@ button.explore {
   font-size: 16px;
   font-weight: 600;
   color: var(--color-primary);
+  font-family: 'Chelsea Market', cursive;
 }
 #newsletter p span {
   font-size: 18px;
   font-weight: 800;
   color: var(--color-secondary);
+  font-family: 'Chelsea Market', cursive;
 }
 
 #newsletter .form {
   display: flex;
   width: 40%;
   justify-content: center;
+
 }
 #newsletter input {
   height:3.125rem;
@@ -635,7 +638,49 @@ button.explore {
 }
 .form-btn {
   width: 140px;
-  height: 45px;
+  height:3.125rem;
   font-size: 18px;
   font-weight: 600;
+  margin-top: 0px;
+  background: linear-gradient(45deg, transparent 5%, #2a9d8f 5%);
+}
+.form-btn:hover{
+  background: linear-gradient(45deg, transparent 5%, #e76f51 5%);
+}
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+footer .col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+footer h4 {
+ font-size: 14px;
+ padding-bottom: 20px;
+}
+
+footer p {
+  font-size: 13px;
+  margin: 0 0 8px 0;
+}
+
+footer a {
+  font-size: 13px;
+  margin: 0 0 8px 0;
+  color:#222
+}
+footer .follow{
+  margin-top: 20px;
+}
+
+footer .follow i {
+  color: var(--color-blue-grey);
+  padding-right:4px;
+  cursor: pointer;
 }
