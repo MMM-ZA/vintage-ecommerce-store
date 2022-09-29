@@ -20,6 +20,7 @@ body {
   --color-white: #FFFFFF;
   --color-blue-grey: #264653;
   --color-tangerine: #e76f51;
+  --color-contrast-yellow: #F6BA0A;
 
 }
 h1 {
@@ -496,10 +497,10 @@ border: 2px solid var(--color-primary);
   left: 0;
   width: 100%;
   height: 100%;
-  border: 3px solid var(--color-tangerine);
+  border: 3px solid var(--color-contrast-yellow);
   display: flex;
   justify-content: center;
-  background-color: var(--color-secondary);
+  background-color: #ffdb57;
   z-index: 1;
   align-items: flex-end;
   transition: 0.5s ease-in-out;
@@ -548,7 +549,7 @@ button.explore {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    background-image: url('images/banner/bannersm2.jpg');
+    background-image: url('images/banner/banner-yellow.jpeg');
     min-width: 550px;
     height: 50vh;
     background-size: cover;
