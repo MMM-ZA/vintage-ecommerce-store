@@ -122,6 +122,11 @@ h6 {
   bottom: -4px;
   left: 20px;
 }
+
+#mobile {
+  display: none;
+  align-items: center;
+}
 /*Home Page*/
 #hero {
   background-image: url(images/products/vintage-1.png);
@@ -354,11 +359,12 @@ box-shadow: 10px -10px 0 -3px #fff, 10px -10px var(--color-tertiary),
 
 #product-1 h2 {
   font-family: 'Chelsea Market', cursive;
-  color: var(--color-blue-grey);
+  color: var(--color-primary);
+  text-shadow: 3px 3px 0px #264653;
 }
 
 #product-1 p {
-  font-size: 16px;
+  font-size: 18px;
   font-family: 'Chelsea Market', cursive;
   color: var(--color-blue-grey);
   margin-bottom: 4px;
@@ -408,6 +414,8 @@ box-shadow: 10px -10px 0 -3px #fff, 10px -10px var(--color-tertiary),
   object-fit: cover;
   resize: both;
   box-shadow: 34px 20px 34px rgba(0, 0, 0, 0.05);
+  border: 3px solid var(--color-tangerine);
+
 }
 
 .product-content {
@@ -486,11 +494,17 @@ border: 2px solid var(--color-primary);
 }
 /* new arrivals */
 #product-1.new-arrivals {
-  background-color: #E9C46A;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='152' height='152' viewBox='0 0 120 120'%3E%3Cpolygon fill='%23F6BA0A' fill-opacity='0.47' points='120 0 120 60 90 30 60 0 0 0 0 0 60 60 0 120 60 120 90 90 120 60 120 0'/%3E%3C/svg%3E");
+  /* background-color: #E9C46A;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='152' height='152' viewBox='0 0 120 120'%3E%3Cpolygon fill='%23F6BA0A' fill-opacity='0.47' points='120 0 120 60 90 30 60 0 0 0 0 0 60 60 0 120 60 120 90 90 120 60 120 0'/%3E%3C/svg%3E"); */
+  background-color: #2A9D8F;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='159' height='159' viewBox='0 0 120 120'%3E%3Cpolygon fill='%23006769' fill-opacity='0.35' points='120 0 120 60 90 30 60 0 0 0 0 0 60 60 0 120 60 120 90 90 120 60 120 0'/%3E%3C/svg%3E");
   padding: 40px 80px;
 }
-
+#product-1.new-arrivals h2 {
+  font-family: 'Chelsea Market', cursive;
+  color: var(--color-secondary);
+  text-shadow: 3px 3px 0px #264653;
+}
 /* banner */
 
 #banner {
@@ -556,7 +570,7 @@ button.explore {
 }
 
 #sm-banner .banner-box2{
-  background-image: url('images/banner/bannersm1.jpg');
+  background-image: url('images/banner/bannersm7.jpg');
 }
 
 #banner3 {
@@ -729,11 +743,35 @@ footer.copyright {
       width: 300px;
       background-color: var(--color-secondary);
       box-shadow: 0 40px 60px rgba(0, 0, 0, .1);
+      transition: 0.3s;
+    }
+
+    #navbar.active {
+      right:0px;
     }
 
      #navbar li {
       margin-bottom: 25px;
      }
+
+      #mobile {
+       display: flex;
+       align-items: center;
+     }
+
+   #mobile i  {
+      color: var(--color-blue-grey);
+      font-size: 24px;
+      padding-left:20px ;
+     }
+
+   #close {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    color: var(--color-blue-grey);
+    font-size: 24px;
+   }
   }
 
 /* features */
