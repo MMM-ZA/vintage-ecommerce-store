@@ -731,6 +731,29 @@ footer.copyright {
   text-align:center;
 }
 
+/* shop-page */
+#shop-page-header {
+  background-image: url(images/banner/shop-banner.jpg);
+  width: 100%;
+  /* height: 40vh; */
+  height: 50vh;
+  background-size:contain;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-align: center;
+  padding: 14px;
+}
+
+#shop-page-header h2,
+ #shop-page-header h4 {
+  font-family: 'Chelsea Market', cursive;
+  color: var(--color-secondary);
+  text-shadow: 3px 3px 0px #264653;
+}
+
+
+
 /* media */
  /* navbar */
   @media (max-width:799px) {
