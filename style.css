@@ -780,7 +780,11 @@ footer.copyright {
   font-size: 16px;
 }
 /* single-product page */
-#product-details.single-pro-image {
+#product-details {
+  display: flex;
+  margin-top: 20px;
+}
+#product-details .single-pro-image {
   width: 40%;
   margin-right: 50px;
 }
@@ -792,6 +796,25 @@ footer.copyright {
 .small-image-col {
   flex-basis: 20%;
   cursor: pointer;
+}
+#product-details .single-product-details {
+  width: 50%;
+  padding-top: 30px;
+}
+
+#product-details .single-product-details h4 {
+  padding: 40px 0 20px 0;
+  font-family: 'Chelsea Market', cursive;
+}
+
+#product-details .single-product-details h2 {
+ font-size: 26px;
+font-family: 'Chelsea Market', cursive;
+}
+#product-details .single-product-details select{
+display: block;
+padding: 5px 10px;
+margin-bottom: 10px;
 }
 
 /* media */
