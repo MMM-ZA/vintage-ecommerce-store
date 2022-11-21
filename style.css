@@ -794,7 +794,8 @@ footer.copyright {
   justify-content: space-between;
 }
 .small-image-col {
-  flex-basis: 20%;
+  flex-basis: 25%;
+  margin: 2px;
   cursor: pointer;
 }
 #product-details .single-product-details {

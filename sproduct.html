@@ -49,6 +49,9 @@
        <div class="small-image-col">
         <img src="images/products/vintage-13.png" alt="" width="100%" class="small-image">
       </div>
+      <div class="small-image-col">
+        <img src="images/products/vintage-15.png" alt="" width="100%" class="small-image">
+      </div>
     </div>
    </div>
    <div class="single-product-details">
@@ -72,7 +75,7 @@
    </div>
   </section>
   <section id="product-1" class="new-arrivals">
-    <h2>New Arrivals</h2>
+    <h2>Featured Products</h2>
     <div class="featured-products">
       <div class="product">
         <div class="image-box">
@@ -204,6 +207,7 @@
       <button class="form-btn">Sign Up</button>
     </div>
   </section>
+
   <footer class="section-p1">
     <div class="col">
       <h4>Contact</h4>
@@ -252,7 +256,24 @@
       </p>
     </div>
   </footer>
+<script>
+  var mainImage = document.getElementById("main-image");
+  var smallImage = document.getElementsByClassName("small-image");
 
+  smallImage[0].onclick = function () {
+    mainImage.src = smallImage[0].src;
+  }
+  smallImage[1].onclick = function () {
+    mainImage.src = smallImage[1].src;
+  }
+  smallImage[2].onclick = function () {
+    mainImage.src = smallImage[2].src;
+  }
+  smallImage[3].onclick = function () {
+    mainImage.src = smallImage[3].src;
+  }
+
+</script>
   <script src="app.js"></script>
 </body>
 
