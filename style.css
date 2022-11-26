@@ -1050,7 +1050,12 @@ button.s-product-btn {
   flex-direction: column;
  }
 
- #product-details.single-pro-image {
-  width:100%;
-  margin-right:0px;
+ #product-details .single-pro-image {
+   width: 100%;
+   margin-right: 0px;
+ }
+
+ #product-details .single-product-details {
+   width: 100%;
+   padding-top: 30px;
  }
