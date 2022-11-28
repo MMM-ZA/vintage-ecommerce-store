@@ -900,6 +900,7 @@ button.s-product-btn {
  display: flex;
  align-items: center;
  width: 100%;
+ position: relative;
 }
 
 #blog .blog-image {
@@ -922,6 +923,7 @@ button.s-product-btn {
   color: var(--color-blue-grey);
   font-weight: 700;
   position:relative ;
+  transition: 0.3s;
 }
 #blog .blog-details a::after {
   content: "";
@@ -931,6 +933,23 @@ button.s-product-btn {
   position: absolute;
   top: 4px;
   right: -60px;
+}
+
+#blog .blog-details a:hover {
+  color:var(--color-primary) ;
+}
+
+#blog .blog-details a:hover::after {
+  background-color: var(--color-primary);
+}
+
+#blog .blog-box h1{
+  position: absolute;
+  top: -40px;
+  left: 0;
+  font-size: 70px;
+  font-weight: 700;
+  color: var(--color-tangerine);
 }
 
 /* media */
