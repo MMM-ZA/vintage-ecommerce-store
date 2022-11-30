@@ -356,7 +356,7 @@ box-shadow: 10px -10px 0 -3px #fff, 10px -10px var(--color-tertiary),
   background-color: var(--color-secondary);
   line-height: 1;
   border-radius: 4px;
-  font-family: 'Chelsea Market', cursive;
+  font-family: 'Chelsea Market';
 }
 /* featured products */
 #product-1 {
@@ -366,14 +366,14 @@ box-shadow: 10px -10px 0 -3px #fff, 10px -10px var(--color-tertiary),
 }
 
 #product-1 h2 {
-  font-family: 'Chelsea Market', cursive;
+  font-family: 'Chelsea Market';
   color: var(--color-primary);
   text-shadow: 3px 3px 0px #264653;
 }
 
 #product-1 p {
   font-size: 18px;
-  font-family: 'Chelsea Market', cursive;
+  font-family: 'Chelsea Market';
   color: var(--color-blue-grey);
   margin-bottom: 4px;
 }
@@ -452,7 +452,7 @@ box-shadow: 10px -10px 0 -3px #fff, 10px -10px var(--color-tertiary),
   font-size: 14px;
   padding-top: 7px;
   font-weight: 600;
-  font-family: 'Chelsea Market',cursive;
+  font-family: 'Chelsea Market';
 }
 #product-1 .product .description h5 {
   padding-top: 7px;
@@ -470,7 +470,7 @@ box-shadow: 10px -10px 0 -3px #fff, 10px -10px var(--color-tertiary),
   font-size: 15px;
   font-weight: 700;
   color: var(--color-blue-grey);
-  font-family:'Chelsea Market',cursive;
+  font-family:'Chelsea Market';
 }
 
 #product-1 .product .cart {
@@ -635,13 +635,13 @@ button.explore {
   font-size: 16px;
   font-weight: 600;
   color: var(--color-primary);
-  font-family: 'Chelsea Market', cursive;
+  font-family: 'Chelsea Market';
 }
 #newsletter p span {
   font-size: 18px;
   font-weight: 800;
   color: var(--color-secondary);
-  font-family: 'Chelsea Market', cursive;
+  font-family: 'Chelsea Market';
 }
 
 #newsletter .form {
@@ -753,7 +753,7 @@ footer.copyright {
     5px 5px 0px #e76f51,
     6px 6px 0px #264653,
     6px 6px 0px #000000;
-  font-family: 'Chelsea Market', cursive;
+  font-family: 'Chelsea Market';
   font-weight: 900;
 }
 
@@ -810,13 +810,13 @@ footer.copyright {
 
 #product-details .single-product-details h4 {
   padding: 40px 0 20px 0;
-  font-family: 'Chelsea Market', cursive;
+  font-family: 'Chelsea Market';
   color: var(--color-blue-grey);
 }
 
 #product-details .single-product-details h2 {
  font-size: 26px;
- font-family: 'Chelsea Market', cursive;
+ font-family: 'Chelsea Market';
  color: var(--color-blue-grey);
 }
 #product-details .single-product-details select{
@@ -847,7 +847,7 @@ button.s-product-btn {
 
 #product-details .single-product-details span {
   line-height: 25px;
-  font-family: 'Chelsea Market', cursive;
+  font-family: 'Chelsea Market';
   color: var(--color-blue-grey);
 }
 
@@ -883,13 +883,11 @@ button.s-product-btn {
 
 #blog-page-header h2,
 #blog-page-header h4 {
-  color: var(--color-white);
-  text-shadow: 4px 4px 0px #2a9d8f,
-    5px 5px 0px #264653,
-    6px 6px 0px #264653,
-    6px 6px 0px #000000;
-  font-family: 'Chelsea Market', cursive;
+  color: var(--color-primary);
+  text-shadow: 3px 3px 0px #264653;
+  font-family: 'Chelsea Market';
   font-weight: 900;
+  text-transform: uppercase;
 }
 
 #blog {
@@ -901,6 +899,7 @@ button.s-product-btn {
  align-items: center;
  width: 100%;
  position: relative;
+ padding-bottom: 90px;
 }
 
 #blog .blog-image {
@@ -949,7 +948,15 @@ button.s-product-btn {
   left: 0;
   font-size: 70px;
   font-weight: 700;
-  color: var(--color-tangerine);
+  color: var(--color-secondary);
+  text-shadow: 3px 3px 0px #e76f51,
+    5px 5px 0px #f4a261,
+    6px 6px 0px #e76f51,
+    7px 7px 0px #2a9d8f,
+    8px 8px 0px #264653,
+    9px 9px 0px #000000;
+  font-family: 'Chelsea Market';
+  z-index: 4;
 }
 
 /* media */
