@@ -755,6 +755,7 @@ footer.copyright {
     6px 6px 0px #000000;
   font-family: 'Chelsea Market';
   font-weight: 900;
+  text-transform: uppercaseshop;
 }
 
 #product-1.shop-products {
@@ -923,6 +924,8 @@ button.s-product-btn {
 
 #blog .blog-details {
   width: 50%;
+  background-image: url(images/blog/text-background.png);
+  background-size: cover;
 }
 
 #blog .blog-details a {
@@ -978,8 +981,37 @@ button.s-product-btn {
   text-align: center;
   padding: 14px;
 }
+#about-page-header h2,
+#about-page-header h4 {
+  color: var(--color-white);
+  text-shadow: 2px 2px 0px #e76f51,
+      3px 3px 0px #e9c46a,
+      4px 4px 0px #f4a261,
+      5px 5px 0px #e76f51,
+      6px 6px 0px #264653,
+      6px 6px 0px #000000;
+  font-family: 'Chelsea Market';
+  font-weight: 900;
+  text-transform: uppercase;
+}
+#about-header {
+  display: flex;
+  align-items: center;
+}
 
+#about-header img{
+  width:50%;
+  height: auto;
+}
+#about-header div {
+  padding-left: 40px;
+}
 
+#about-header marquee {
+  font-family: 'Chelsea Market';
+  font-weight: 600;
+  color: var(--color-blue-grey);
+}
 /* media */
  /* navbar */
   @media (max-width:799px) {
