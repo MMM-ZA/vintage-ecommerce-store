@@ -755,7 +755,7 @@ footer.copyright {
     6px 6px 0px #000000;
   font-family: 'Chelsea Market';
   font-weight: 900;
-  text-transform: uppercaseshop;
+  text-transform: uppercase;
 }
 
 #product-1.shop-products {
@@ -852,21 +852,6 @@ button.s-product-btn {
   color: var(--color-blue-grey);
 }
 
-/* single product page */
-#product-details {
-  display: flex;
-  flex-direction: column;
-}
-
-#product-details .single-pro-image {
-  width: 100%;
-  margin-right: 0px;
-}
-
-#product-details .single-product-details {
-  width: 100%;
-  padding-top: 30px;
-}
 
 /* blog-page */
 
@@ -911,6 +896,7 @@ button.s-product-btn {
  padding-bottom: 90px;
 }
 
+
 #blog .blog-image {
   width: 50%;
   margin-right: 40px;
@@ -926,6 +912,15 @@ button.s-product-btn {
   width: 50%;
   background-image: url(images/blog/text-background.png);
   background-size: cover;
+}
+
+#blog .blog-details:hover {
+  box-shadow: 10px -10px 0 -3px #fff, 10px -10px var(--color-secondary),
+      20px -20px 0 -3px #fff, 20px -20px var(--color-tertiary),
+      30px -30px 0 -3px #fff, 30px -30px var(--color-tangerine),
+      40px -40px 0 -3px #fff, 40px -40px var(--color-primary),
+      50px -50px 0 -3px #fff, 50px -50px var(--color-blue-grey);
+    transition: box-shadow 1s, top 1s, left 1s;
 }
 
 #blog .blog-details a {
@@ -1029,7 +1024,7 @@ button.s-product-btn {
 #about-app .video {
   width: 70%;
   height: 100%;
-  margin-top: 30px;
+  margin: 30px auto 0 auto;
 }
 #about-app .video video {
   width: 100%;
@@ -1228,6 +1223,27 @@ button.s-product-btn {
     text-align: start;
   }
 
+  /* single product page */
+ #product-details {
+  display: flex;
+  flex-direction: column;
+}
+
+ #product-details .single-pro-image {
+  width: 100%;
+  margin-right: 0px;
+}
+
+ #product-details .single-product-details {
+  width: 100%;
+  padding-top: 30px;
+}
+
+ /* Shop page  */
+
+ #product-1.shop-products {
+  padding: 20px;
+ }
  /* Blog page */
   #blog {
    padding: 100px 20px 0 20px;
@@ -1253,6 +1269,16 @@ button.s-product-btn {
 
   #blog .blog-details {
   width: 100%;
+ }
+
+ /* About Page  */
+
+ #about-header {
+  flex-direction: column;
+ }
+ #about-header img {
+  width: 100%;
+  margin-bottom: 20px;
  }
 
  }
