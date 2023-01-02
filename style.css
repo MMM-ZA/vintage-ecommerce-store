@@ -1281,4 +1281,12 @@ button.s-product-btn {
   margin-bottom: 20px;
  }
 
+ #about-header div {
+   padding-left: 0px;
+ }
+
+ #about-app .video {
+   width: 100%;
+ }
+
  }
