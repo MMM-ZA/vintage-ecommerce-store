@@ -1050,6 +1050,7 @@ button.s-product-btn {
   font-family: 'Chelsea Market';
   font-weight: 900;
   text-transform: uppercase;
+
 }
  #contact-details {
   display: flex;
@@ -1072,6 +1073,7 @@ button.s-product-btn {
  font-size: 24px;
  line-height: 35px;
  padding: 20px 0;
+
  }
 
  #contact-details .details h3 {
@@ -1112,6 +1114,7 @@ button.s-product-btn {
  align-items: flex-start;
  color: var(--color-blue-grey);
  font-family: 'Chelsea Market';
+ padding-left: 25px;
 
  }
 
