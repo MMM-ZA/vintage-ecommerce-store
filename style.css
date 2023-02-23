@@ -62,7 +62,7 @@ h6 {
   display: inline-block;
   line-height: 1.8;
   padding: 0 16px;
-  font-family: 'Chelsea Market', cursive;
+  font-family: 'Chelsea Market';
 
 }
 .logo h5 {
@@ -73,7 +73,7 @@ h6 {
       5px 5px 0px #e76f51,
       6px 6px 0px #264653,
       6px 6px 0px #000000;
-  font-family: 'Chelsea Market', cursive;
+  font-family: 'Chelsea Market';
   font-weight: 900;
   text-transform: uppercase;
   font-size: 30px;
@@ -101,7 +101,7 @@ h6 {
  position: relative;
 }
 #navbar li a{
-  font-family: 'Chelsea Market', cursive;
+  font-family: 'Chelsea Market';
   font-weight: 500;
   color: var(--color-blue-grey);
   font-size: 16px;
@@ -203,17 +203,17 @@ h6 {
 
 #hero h1 {
   color: var(--color-primary);
-  font-family: 'Chelsea Market', cursive;
+  font-family: 'Chelsea Market';
 }
 #hero h2 {
   color: var(--color-blue-grey);
-  font-family: 'Chelsea Market', cursive;
+  font-family: 'Chelsea Market';
 }
 #hero h4 {
   padding-bottom: 15px;
   color: var(--color-blue-grey);
   font-size: 20px;
-  font-family: 'Chelsea Market', cursive;
+  font-family: 'Chelsea Market';
 }
 
 button,
@@ -223,7 +223,7 @@ button::after {
   margin-top: 20px;
   font-size: 22px;
   font-weight: 600;
-  font-family: 'Chelsea Market',cursive;
+  font-family: 'Chelsea Market';
   background: linear-gradient(45deg, transparent 5%, #e76f51 5%);
   border: 0;
   color:var(--color-white);
@@ -498,7 +498,7 @@ border: 2px solid var(--color-primary);
   padding: 40px 80px;
 }
 #product-1.new-arrivals h2 {
-  font-family: 'Chelsea Market', cursive;
+  font-family: 'Chelsea Market';
   color: var(--color-secondary);
   text-shadow: 3px 3px 0px #264653;
 }
@@ -518,17 +518,17 @@ border: 2px solid var(--color-primary);
 #banner h4{
   color:var(--color-secondary);
   text-shadow: 3px 3px 0px #264653;
-  font-family: 'Chelsea Market', cursive;
+  font-family: 'Chelsea Market';
 }
 #banner h2 {
   color: var(--color-secondary);
   text-shadow: 3px 3px 0px #264653;
-  font-family: 'Chelsea Market', cursive;
+  font-family: 'Chelsea Market';
 }
 #banner h2 span {
   color: var(--color-primary);
   text-shadow: 4px 4px 0px #264653;
-  font-family: 'Chelsea Market', cursive;
+  font-family: 'Chelsea Market';
 }
 button.explore {
   font-size: 20px;
@@ -805,7 +805,7 @@ footer.copyright {
 }
 
 #product-details .single-product-details h6 {
-  font-family: 'Chelsea Market', cursive;
+  font-family: 'Chelsea Market';
   color: var(--color-blue-grey);
 }
 
@@ -1107,6 +1107,15 @@ button.s-product-btn {
   height: 100%;
 
  }
+
+ #form-details {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px;
+  padding:80px;
+  border: 1px solid var(--color-blue-grey);
+
+ }
  #form-details form {
  width: 65%;
  display: flex;
@@ -1116,6 +1125,10 @@ button.s-product-btn {
  font-family: 'Chelsea Market';
  padding-left: 25px;
 
+ }
+ #form-details h2 {
+  color: var(--color-blue-grey);
+  font-family: 'Chelsea Market';
  }
 
  #form-details form input,
@@ -1133,6 +1146,33 @@ button.s-product-btn {
   #form-details form button:hover {
    background: linear-gradient(45deg, transparent 5%, #2a9d8f 5%);
  }
+
+  #form-details .staff div {
+    padding-bottom: 25px;
+    display: flex;
+    align-items: flex-start;
+  }
+
+  #form-details .staff div img {
+    width: 65px;
+    height: 65px;
+    object-fit: cover;
+    margin-right: 15px;
+
+  }
+
+  #form-details .staff div p {
+    margin: 0;
+    font-size: 13px;
+    line-height: 25px;
+  }
+
+  #form-details .staff div p span {
+     display: block;
+     font-size: 16px;
+     font-weight: 600;
+     color: var(--color-blue-grey);
+  }
 
 /* media */
  /* navbar */
