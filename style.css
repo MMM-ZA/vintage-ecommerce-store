@@ -1066,6 +1066,7 @@ button.s-product-btn {
  #contact-details .details span,
  #form-details span {
  font-size: 12px;
+ font-family: 'Chelsea Market';
  }
 
  #contact-details .details h2,
@@ -1073,12 +1074,14 @@ button.s-product-btn {
  font-size: 24px;
  line-height: 35px;
  padding: 20px 0;
+ font-family: 'Chelsea Market';
 
  }
 
  #contact-details .details h3 {
  font-size: 16px;
  padding-bottom: 16px;
+ font-family: 'Chelsea Market';
  }
 
  #contact-details .details li {
@@ -1114,8 +1117,9 @@ button.s-product-btn {
   margin: 30px;
   padding:80px;
   border: 1px solid var(--color-blue-grey);
-
  }
+
+
  #form-details form {
  width: 65%;
  display: flex;
@@ -1126,6 +1130,7 @@ button.s-product-btn {
  padding-left: 25px;
 
  }
+
  #form-details h2 {
   color: var(--color-blue-grey);
   font-family: 'Chelsea Market';
@@ -1262,6 +1267,16 @@ button.s-product-btn {
    width: 70%;
 
  }
+  /* contact page  */
+
+  #form-details {
+    padding: 60px;
+  }
+
+  #form-details form {
+    width: 50%;
+  }
+
 }
 
  @media (max-width:477px) {
@@ -1430,6 +1445,33 @@ button.s-product-btn {
 
  #about-app .video {
    width: 100%;
+ }
+
+ /* Contact Page */
+
+ #contact-details {
+  flex-direction: column;
+ }
+
+ #contact-details .details {
+  width:100%;
+  margin-bottom: 30px;
+ }
+
+ #contact-details  .map {
+  width: 100% ;
+ }
+
+ #form-details {
+  margin:10px;
+  padding:30px 10px;
+  flex-wrap: wrap;
+  width: 100%;
+ }
+
+ #form-details form {
+  width: 100%;
+  margin-bottom: 30px;
  }
 
  }
