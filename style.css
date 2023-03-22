@@ -1237,6 +1237,21 @@ button.s-product-btn {
   border-right: none;
  }
 
+ #cart table thead td {
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 18px 0;
+ }
+  #cart table tbody tr td {
+    padding-top: 15px;
+  }
+
+  #cart table tbody td {
+   font-size: 13px;
+  }
+
+
 /* media */
  /* navbar */
   @media (max-width:799px) {
