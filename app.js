@@ -13,9 +13,3 @@ if (closeBar) {
     navbarBar.classList.remove('active');
   })
 }
-
-// Add a click event listener to the icon
-const iconNavigation = documet.getElementById('shopping-icon');
-iconNavigation.addEventListener('click',()=> {
-    window.location.href = 'sproduct.html';
-});
