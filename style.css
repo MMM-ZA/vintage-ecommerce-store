@@ -1743,6 +1743,21 @@ button.s-product-btn {
    padding-left: 0px;
  }
 
+ #about-hero-1,
+ #about-hero-2,
+ #about-hero-3 {
+  padding: 0 20px;
+  background-position: 55%;
+ }
+
+ #about-hero-1 .about-hero-card-wrapper,
+ #about-hero-2 .about-hero-card-wrapper {
+ display: none;
+ }
+
+ .about-card-text{
+  width: 100%;
+ }
 
 
  /* Contact Page */
