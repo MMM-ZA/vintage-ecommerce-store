@@ -1479,6 +1479,7 @@ button.s-product-btn {
     margin-bottom: 20px;
   }
 
+
 /* media */
  /* navbar */
   @media (max-width:799px) {
@@ -1567,6 +1568,24 @@ button.s-product-btn {
    width: 70%;
 
  }
+ /* about page */
+ #about-header img {
+   height: 30vh;
+ }
+
+  #about-hero-1,
+  #about-hero-2,
+  #about-hero-3 {
+    padding: 0 100px;
+  }
+
+  #about-hero-1 .about-hero-card-wrapper,
+  #about-hero-2 .about-hero-card-wrapper {
+      position: relative;
+      top: 40px;
+      right: 10px;
+      left:0px;
+  }
   /* contact page  */
 
   #form-details {
@@ -1576,7 +1595,11 @@ button.s-product-btn {
   #form-details form {
     width: 50%;
   }
+  /* Cart Page */
 
+  #cart {
+    overflow-x: auto;
+  }
 }
 
  @media (max-width:477px) {
@@ -1675,6 +1698,9 @@ button.s-product-btn {
   #newsletter .form {
    width: 100%;
   }
+  .form-btn {
+    font-size: 16px;
+  }
 
  /* footer */
   footer .copyright {
@@ -1759,7 +1785,6 @@ button.s-product-btn {
   width: 100%;
  }
 
-
  /* Contact Page */
 
  #contact-details {
@@ -1786,5 +1811,32 @@ button.s-product-btn {
   width: 100%;
   margin-bottom: 30px;
  }
+#form-details button {
+  width: 120px;
+  height: 60px;
+  font-size: 18px;
+}
+    /* Cart Page */
+  #cart-add {
+  flex-direction: column ;
+   }
+  #coupon {
+   width: 100%;
+  }
+  #coupon button {
+    width: 90px;
+    height: 50px;
+    font-size: 18px;
+  }
+
+  #sub-total {
+    width: 100%;
+    padding: 20px;
+  }
+  #sub-total button {
+  width: 120px;
+  height: 60px;
+  font-size: 18px;
+  }
 
  }
