@@ -1,18 +1,132 @@
-@import url('https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Finlandica:wght@400;500;600;700&display=swap');
+@import url(https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Finlandica:wght@400;500;600;700&display=swap);
+
+#header,
+#navbar {
+  align-items: center;
+  display: flex
+}
+
+#navbar li a,
+.logo h5,
+.logo span {
+  font-family: 'Chelsea Market'
+}
+
+#close,
+#mobile {
+  display: none
+}
+
+#hero,
+body {
+  width: 100%
+}
+
+#header,
+#hero,
+#navbar {
+  display: flex
+}
+
+#feature .feature-box h6,
+#header {
+  background-color: var(--color-secondary)
+}
+
+#product-1,
+.card-text {
+  background-color: #f4a261;
+  text-align: center
+}
+
+.image-box,
+.product-content {
+  top: 0;
+  transition: .5s ease-in-out;
+  left: 0
+}
+
+#product-1 .product .description h5,
+#product-1 .product .description span {
+  font-size: 14px;
+  padding-top: 7px;
+  color: var(--color-blue-grey)
+}
+
+#banner h2 span,
+#banner3 h2,
+#sm-banner h2,
+#sm-banner h4 {
+  text-shadow: 4px 4px 0 #264653
+}
+
+#banner h2 span,
+#newsletter p,
+#product-1 .product .cart:hover,
+#product-1 h2 {
+  color: var(--color-primary)
+}
+
+#about-page-header h2,
+#about-page-header h4,
+#cart-page-header h2,
+#shop-page-header h2,
+#shop-page-header h4,
+.logo h5 {
+  text-shadow: 2px 2px 0 #e76f51, 3px 3px 0 #e9c46a, 4px 4px 0 #f4a261, 5px 5px 0 #e76f51, 6px 6px 0 #264653, 6px 6px 0 #000;
+  color: var(--color-white);
+  text-transform: uppercase
+}
+
+#banner3 h3,
+#newsletter h4,
+#pagination a,
+#sm-banner h2,
+#sm-banner h4,
+.logo h5,
+.logo span,
+button,
+button::after {
+  color: var(--color-white)
+}
+
+#about-hero-1 .about-hero-card-wrapper,
+.hero-card-wrapper {
+  transform-style: preserve-3d;
+  position: relative;
+  perspective: 40em
+}
+
+#about-hero-1 .about-hero-card-wrapper:before,
+#about-hero-2 .about-hero-card-wrapper:before,
+.hero-card-wrapper:before {
+  --bw: 9px;
+  content: '';
+  margin-top: calc(-1 * var(--bw));
+  margin-left: calc(-1 * var(--bw));
+  transform: translateX(-60px) rotateY(-30deg) rotateX(15deg) scale(1.03);
+  pointer-events: none;
+  box-sizing: content-box
+}
+
+#about-hero-1,
+#about-hero-2,
+#about-hero-3,
+#hero {
+  height: 90vh;
+  background-position: top 25% right 0;
+  padding: 0 80px
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Finlandica', sans-serif;
+  font-family: Finlandica, sans-serif;
   list-style: none;
-  text-decoration: none;
+  text-decoration: none
 }
 
-body {
-
-  width: 100%;
-
-}
 :root {
   --color-primary: #2a9d8f;
   --color-secondary: #e9c46a;
@@ -20,97 +134,97 @@ body {
   --color-white: #FFFFFF;
   --color-blue-grey: #264653;
   --color-tangerine: #e76f51;
-  --color-contrast-yellow: #F6BA0A;
-
+  --color-contrast-yellow: #F6BA0A
 }
+
 h1 {
   font-size: 50px;
-  line-height: 64px;
+  line-height: 64px
 }
 
 h2 {
- font-size: 46px;
- line-height: 54px;
+  font-size: 46px;
+  line-height: 54px
 }
 
 h3 {
   font-size: 40px;
-  line-height: 44px;
+  line-height: 44px
 }
+
+.logo h5,
 h4 {
-  font-size: 30px;
-  line-height: 34px;
+  font-size: 30px
 }
+
+h4 {
+  line-height: 34px
+}
+
 h6 {
   font-weight: 700;
-  font-size: 12px;
+  font-size: 12px
+}
 
-}
 .section-p1 {
-  padding: 40px 80px;
+  padding: 40px 80px
 }
+
 .section-p2 {
-  padding: 20px 60px;
+  padding: 20px 60px
 }
+
 .section-m1 {
-  margin: 40px 0;
+  margin: 40px 0
 }
 
 .logo span {
-  background:var(--color-tangerine);
-  color:var(--color-white);
+  background: var(--color-tangerine);
   display: inline-block;
   line-height: 1.8;
-  padding: 0 16px;
-  font-family: 'Chelsea Market';
+  padding: 0 16px
+}
 
-}
 .logo h5 {
-  color:var(--color-white);
-  text-shadow: 2px 2px 0px #e76f51,
-      3px 3px 0px #e9c46a,
-      4px 4px 0px #f4a261,
-      5px 5px 0px #e76f51,
-      6px 6px 0px #264653,
-      6px 6px 0px #000000;
-  font-family: 'Chelsea Market';
   font-weight: 900;
-  text-transform: uppercase;
-  font-size: 30px;
-  line-height: 1.3;
+  line-height: 1.3
 }
-/* Header */
+
+#banner h2,
+#banner h4,
+#banner3 h3,
+#product-1 h2,
+#product-1.new-arrivals h2,
+button,
+button::after {
+  text-shadow: 3px 3px 0 #264653
+}
+
 #header {
-  display: flex;
-  align-items: center;
   justify-content: space-between;
   padding: 20px 80px;
-  background-color: var(--color-secondary);
-  box-shadow: rgba(0, 0, 0, 0.06);
+  box-shadow: rgba(0, 0, 0, .06)
 }
 
 #navbar {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  /* background-image: linear-gradient(to right top, #2a9d8f, #4ba886, #6db27a, #91ba70, #b6c069, #c8bf66, #dabe65, #ecbc67, #eeb664, #f1af63, #f2a961, #f4a261); */
+  justify-content: center
+}
 
-}
 #navbar li {
- padding: 0 20px;
- position: relative;
+  padding: 0 20px;
+  position: relative
 }
-#navbar li a{
-  font-family: 'Chelsea Market';
+
+#navbar li a {
   font-weight: 500;
   color: var(--color-blue-grey);
   font-size: 16px;
-  transition: 0.3s ease;
-
+  transition: .3s
 }
-#navbar li a:hover,
-#navbar li a.active {
-  color: var(--color-tangerine);
+
+#navbar li a.active,
+#navbar li a:hover {
+  color: var(--color-tangerine)
 }
 
 #navbar li a.active::after,
@@ -118,52 +232,42 @@ h6 {
   content: "";
   width: 30px;
   height: 2px;
-  background-color:var(--color-tangerine) ;
+  background-color: var(--color-tangerine);
   position: absolute;
   bottom: -4px;
-  left: 20px;
+  left: 20px
 }
 
 #mobile {
-  display: none;
-  align-items: center;
+  align-items: center
 }
 
-#close {
-  display: none;
+#banner,
+#hero {
+  flex-direction: column
 }
 
-
-/*Home Page*/
 #hero {
   background-image: url(images/products/vintage-1.png);
-  height: 90vh;
-  width: 100%;
   background-size: cover;
-  background-position: top 25% right 0;
-  padding: 0 80px;
-  display: flex;
-  flex-direction: column;
   align-items: flex-start;
-  justify-content: center;
+  justify-content: center
 }
 
-.hero-card-wrapper{
-  position: relative;
-  perspective: 40em;
-  display: grid;
-  transform-style: preserve-3d;
+.hero-card-wrapper {
+  display: grid
 }
+
+#form-details form button:hover,
+#sm-banner .banner-box:hover button,
 .hero-card-wrapper:hover button {
-  background: linear-gradient(45deg, transparent 5%, #2a9d8f 5%);
+  background: linear-gradient(45deg, transparent 5%, #2a9d8f 5%)
 }
-.card-text{
-  background-color: #f4a261;
+
+.card-text {
   width: 500px;
   height: 300px;
-  text-align: center;
-  padding-top: 15px;
-  grid-area: 1 / 1;
+  grid-area: 1/1;
   transform: translateX(10px) rotateY(25deg) rotateX(10deg);
   display: flex;
   justify-content: flex-start;
@@ -171,49 +275,80 @@ h6 {
   align-items: center;
   padding: 30px;
   backface-visibility: hidden;
-  box-shadow: 0 10px 30px -3px rgba(0, 0, 0, .1);
+  box-shadow: 0 10px 30px -3px rgba(0, 0, 0, .1)
 }
+
+.image-box,
+.product-content {
+  height: 100%;
+  position: absolute
+}
+
+#about-hero-1 .about-hero-card-wrapper:before,
 .hero-card-wrapper:before {
-  --bw: 9px;
-  grid-area: 1 / 1;
-  content: '';
+  grid-area: 1/1;
   backface-visibility: hidden;
   height: 100%;
   width: 100%;
-  margin-top: calc(-1 * var(--bw));
-  margin-left: calc(-1 * var(--bw));
-  background: transparent;
-  transform: translateX(-60px) rotateY(-30deg) rotateX(15deg) scale(1.03);
-  pointer-events: none;
-  border: var(--bw) solid #e9c46a;
-  box-sizing: content-box;
+  background: 0 0;
+  border: var(--bw) solid #e9c46a
 }
 
-
-.hero-card-wrapper:hover>div,
-.hero-card-wrapper:hover:before {
-  transform: none;
+.form-btn:hover,
+button,
+button::after {
+  background: linear-gradient(45deg, transparent 5%, #e76f51 5%)
 }
 
-.hero-card-wrapper>div,
-.hero-card-wrapper:before {
+#blog .blog-details a:hover::after,
+#pagination a,
+#product-1 .product .cart {
+  background-color: var(--color-primary)
+}
+
+#about-hero-1 .about-hero-card-wrapper:hover:before,
+#about-hero-1 .about-hero-card-wrapper:hover>div,
+#about-hero-2 .about-hero-card-wrapper:hover:before,
+#about-hero-2 .about-hero-card-wrapper:hover>div,
+.hero-card-wrapper:hover:before,
+.hero-card-wrapper:hover>div {
+  transform: none
+}
+
+#about-hero-1 .about-hero-card-wrapper:before,
+#about-hero-1 .about-hero-card-wrapper>div,
+#about-hero-2 .about-hero-card-wrapper:before,
+#about-hero-2 .about-hero-card-wrapper>div,
+.hero-card-wrapper:before,
+.hero-card-wrapper>div {
   will-change: transform;
-  transition: .3s transform cubic-bezier(.25, .46, .45, 1);
+  transition: transform .3s cubic-bezier(.25, .46, .45, 1)
 }
 
+#about-hero-1 h2,
+#about-hero-2 h2,
 #hero h1 {
   color: var(--color-primary);
-  font-family: 'Chelsea Market';
+  font-family: 'Chelsea Market'
 }
-#hero h2 {
+
+#about-hero-1 h4,
+#about-hero-1 p,
+#about-hero-2 h4,
+#about-hero-2 p,
+#feature .feature-box h6,
+#form-details h2,
+#hero h2,
+#hero h4 {
   color: var(--color-blue-grey);
-  font-family: 'Chelsea Market';
+  font-family: 'Chelsea Market'
 }
+
+#about-hero-1 h4,
+#about-hero-2 h4,
 #hero h4 {
   padding-bottom: 15px;
-  color: var(--color-blue-grey);
-  font-size: 20px;
-  font-family: 'Chelsea Market';
+  font-size: 20px
 }
 
 button,
@@ -224,16 +359,13 @@ button::after {
   font-size: 22px;
   font-weight: 600;
   font-family: 'Chelsea Market';
-  background: linear-gradient(45deg, transparent 5%, #e76f51 5%);
   border: 0;
-  color:var(--color-white);
-  text-shadow: 3px 3px 0px #264653;
   text-transform: uppercase;
   letter-spacing: 3px;
   line-height: 30px;
   box-shadow: 6px 6px 6px var(--color-secondary);
   outline: transparent;
-  position: relative;
+  position: relative
 }
 
 button::after {
@@ -243,7 +375,6 @@ button::after {
   --slice-3: inset(10% -6px 85% 0);
   --slice-4: inset(40% -6px 43% 0);
   --slice-5: inset(80% -6px 5% 0);
-
   content: 'SHOP NOW';
   display: block;
   position: absolute;
@@ -252,130 +383,130 @@ button::after {
   right: 0;
   bottom: 0;
   background: linear-gradient(45deg, transparent 3%, #e9c46a 3%, #2a9d8f 5%, #e76f51 5%);
-  text-shadow: -3px -3px 0px #F8F005, 3px 3px 0px #2a9d8f;
-  clip-path: var(--slice-0);
+  text-shadow: -3px -3px 0 #f8f005, 3px 3px 0 #2a9d8f;
+  clip-path: var(--slice-0)
 }
 
 button:hover::after {
-  animation: 1s glitch;
-  animation-timing-function: steps(2, end);
+  animation: 1s steps(2, end) glitch
 }
 
 @keyframes glitch {
   0% {
     clip-path: var(--slice-1);
-    transform: translate(-20px, -10px);
+    transform: translate(-20px, -10px)
   }
 
   10% {
     clip-path: var(--slice-3);
-    transform: translate(10px, 10px);
+    transform: translate(10px, 10px)
   }
 
   20% {
     clip-path: var(--slice-1);
-    transform: translate(-10px, 10px);
+    transform: translate(-10px, 10px)
   }
 
   30% {
     clip-path: var(--slice-3);
-    transform: translate(0px, 5px);
+    transform: translate(0, 5px)
   }
 
   40% {
     clip-path: var(--slice-2);
-    transform: translate(-5px, 0px);
+    transform: translate(-5px, 0)
   }
 
   50% {
     clip-path: var(--slice-3);
-    transform: translate(5px, 0px);
+    transform: translate(5px, 0)
   }
 
   60% {
     clip-path: var(--slice-4);
-    transform: translate(5px, 10px);
+    transform: translate(5px, 10px)
   }
 
   70% {
     clip-path: var(--slice-2);
-    transform: translate(-10px, 10px);
+    transform: translate(-10px, 10px)
   }
 
   80% {
     clip-path: var(--slice-5);
-    transform: translate(20px, -10px);
+    transform: translate(20px, -10px)
   }
 
   90% {
     clip-path: var(--slice-1);
-    transform: translate(-10px, 0px);
+    transform: translate(-10px, 0)
   }
 
   100% {
     clip-path: var(--slice-1);
-    transform: translate(0);
+    transform: translate(0)
   }
 }
-/*features*/
-#feature {
+
+#feature,
+#sm-banner {
   display: flex;
   flex-direction: row;
-  justify-content:space-between;
-  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-wrap: wrap
 }
-#feature .feature-box{
+
+#feature .feature-box {
   width: 180px;
   text-align: center;
   padding: 25px 15px;
-  box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
+  box-shadow: 20px 20px 34px rgba(0, 0, 0, .03);
   border: 3px solid var(--color-secondary);
   margin: 15px 0;
-  border-radius: 4px;
-
+  border-radius: 4px
 }
-#feature .feature-box:hover {
-box-shadow: 10px -10px 0 -3px #fff, 10px -10px var(--color-tertiary),
-    20px -20px 0 -3px #fff, 20px -20px var(--color-tangerine),
-    30px -30px 0 -3px #fff, 30px -30px var(--color-primary),
-    40px -40px 0 -3px #fff, 40px -40px var(--color-blue-grey);
-  transition: box-shadow 1s, top 1s, left 1s;
 
+#feature .feature-box:hover {
+  box-shadow: 10px -10px 0 -3px #fff, 10px -10px var(--color-tertiary), 20px -20px 0 -3px #fff, 20px -20px var(--color-tangerine), 30px -30px 0 -3px #fff, 30px -30px var(--color-primary), 40px -40px 0 -3px #fff, 40px -40px var(--color-blue-grey);
+  transition: box-shadow 1s, top 1s, left 1s
 }
 
 #feature .feature-box img {
   width: 100%;
-  margin-bottom: 10px;
+  margin-bottom: 10px
 }
-
 
 #feature .feature-box h6 {
   display: inline-block;
-  padding: 9px 8px 6px 8px;
-  color: var(--color-blue-grey);
-  background-color: var(--color-secondary);
+  padding: 9px 8px 6px;
   line-height: 1;
-  border-radius: 4px;
-  font-family: 'Chelsea Market';
+  border-radius: 4px
 }
-/* featured products */
+
+.image-box img,
+.product-content {
+  border: 9px solid var(--color-tangerine)
+}
+
 #product-1 {
-  text-align: center;
-  background-color: #F4A261;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='187' height='187' viewBox='0 0 120 120'%3E%3Cpolygon fill='%23E76F51' fill-opacity='0.23' points='120 0 120 60 90 30 60 0 0 0 0 0 60 60 0 120 60 120 90 90 120 60 120 0'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='187' height='187' viewBox='0 0 120 120'%3E%3Cpolygon fill='%23E76F51' fill-opacity='0.23' points='120 0 120 60 90 30 60 0 0 0 0 0 60 60 0 120 60 120 90 90 120 60 120 0'/%3E%3C/svg%3E")
+}
+
+#blog .blog-details a::after,
+#newsletter,
+#product-1 .product .cart:hover {
+  background-color: var(--color-blue-grey)
 }
 
 #product-1 h2 {
-  font-family: 'Chelsea Market';
-  color: var(--color-primary);
-  text-shadow: 3px 3px 0px #264653;
+  font-family: 'Chelsea Market'
 }
 
 #product-1 p {
   font-size: 18px;
   font-family: 'Chelsea Market';
   color: var(--color-blue-grey);
-  margin-bottom: 4px;
+  margin-bottom: 4px
 }
 
 .featured-products {
@@ -385,8 +516,7 @@ box-shadow: 10px -10px 0 -3px #fff, 10px -10px var(--color-tertiary),
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  padding-top: 20px;
-
+  padding-top: 20px
 }
 
 .featured-products .product {
@@ -394,228 +524,201 @@ box-shadow: 10px -10px 0 -3px #fff, 10px -10px var(--color-tertiary),
   width: 25rem;
   max-width: 300px;
   height: 25rem;
-  margin: 3rem 2rem;
+  margin: 3rem 2rem
 }
 
 .featured-products .product:hover .image-box {
-  transform: translate(-3.5rem, -3.5rem);
+  transform: translate(-3.5rem, -3.5rem)
 }
 
 .featured-products .product:hover .product-content {
-  transform: translate(3.5rem, 3.5rem);
+  transform: translate(3.5rem, 3.5rem)
 }
 
 .image-box {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
-  height: 100%;
-  z-index: 2;
-  transition: all 0.5s ease-in-out;
+  z-index: 2
 }
 
 .image-box img {
-  width:25rem;
+  width: 25rem;
   max-width: 300px;
   height: 25rem;
   object-fit: cover;
   resize: both;
-  box-shadow: 34px 20px 34px rgba(0, 0, 0, 0.05);
-  border: 9px solid var(--color-tangerine);
-
+  box-shadow: 34px 20px 34px rgba(0, 0, 0, .05)
 }
 
 .product-content {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
-  height: 100%;
-  border: 9px solid var(--color-tangerine);
   display: flex;
   justify-content: center;
   background-color: #f4a279;
   z-index: 1;
-  align-items: flex-end;
-  transition: 0.5s ease-in-out;
-
+  align-items: flex-end
 }
-
 
 #product-1 .product .description {
   text-align: start;
-  padding: 5px 0;
+  padding: 5px 0
 }
+
 #product-1 .product .description span {
-  color: var(--color-blue-grey);
-  font-size: 14px;
-  padding-top: 7px;
   font-weight: 600;
-  font-family: 'Chelsea Market';
+  font-family: 'Chelsea Market'
 }
-#product-1 .product .description h5 {
-  padding-top: 7px;
-  color: var(--color-blue-grey);
-  font-size: 14px;
+
+#banner h2,
+#banner h4,
+#banner3 h3 span,
+#newsletter p span,
+#product-1.new-arrivals h2 {
+  color: var(--color-secondary)
 }
 
 #product-1 .product .description i {
   font-size: 12px;
   color: var(--color-secondary);
-  text-shadow: 1px 1px 0px #264653;
+  text-shadow: 1px 1px 0 #264653
 }
-#product-1 .product .description h4{
+
+#product-1 .product .description h4 {
   padding-top: 7px;
   font-size: 15px;
   font-weight: 700;
   color: var(--color-blue-grey);
-  font-family:'Chelsea Market';
+  font-family: 'Chelsea Market'
 }
 
 #product-1 .product .cart {
- width: 40px;
- height: 40px;
- color: var(--color-blue-grey);
- line-height: 40px;
- border-radius: 50px;
- background-color: var(--color-primary);
- border: 2px solid var(--color-blue-grey);
- position: absolute;
- bottom: 20px;
- right: 10px;
+  width: 40px;
+  height: 40px;
+  color: var(--color-blue-grey);
+  line-height: 40px;
+  border-radius: 50px;
+  border: 2px solid var(--color-blue-grey);
+  position: absolute;
+  bottom: 20px;
+  right: 10px
+}
+
+#banner3 .banner-box,
+#sm-banner .banner-box {
+  border: 7px solid var(--color-secondary);
+  background-position: center;
+  display: flex;
+  background-size: cover
 }
 
 #product-1 .product .cart:hover {
- color: var(--color-primary);
- background-color: var(--color-blue-grey);
-border: 2px solid var(--color-primary);
+  border: 2px solid var(--color-primary)
 }
-/* new arrivals */
+
 #product-1.new-arrivals {
-  background-color: #2A9D8F;
+  background-color: #2a9d8f;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='159' height='159' viewBox='0 0 120 120'%3E%3Cpolygon fill='%23006769' fill-opacity='0.35' points='120 0 120 60 90 30 60 0 0 0 0 0 60 60 0 120 60 120 90 90 120 60 120 0'/%3E%3C/svg%3E");
-  padding: 40px 80px;
+  padding: 40px 80px
 }
+
 #product-1.new-arrivals h2 {
-  font-family: 'Chelsea Market';
-  color: var(--color-secondary);
-  text-shadow: 3px 3px 0px #264653;
+  font-family: 'Chelsea Market'
 }
-/* banner */
+
+#about-header h2,
+#about-header marquee,
+#blog .blog-details a,
+#contact-details .details,
+#coupon h3,
+#form-details .staff div p span,
+#form-details form,
+#product-details .single-product-details h2,
+#product-details .single-product-details h4,
+#product-details .single-product-details span,
+#sub-total h3,
+#sub-total td,
+.blog-details h4,
+.blog-details p,
+.far,
+footer .follow i {
+  color: var(--color-blue-grey)
+}
 
 #banner {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   background-image: url('images/banner/banner.png');
   width: 100%;
   height: 50vh;
   background-size: cover;
-  background-position: center;
+  background-position: center
 }
-#banner h4{
-  color:var(--color-secondary);
-  text-shadow: 3px 3px 0px #264653;
-  font-family: 'Chelsea Market';
+
+#banner h2,
+#banner h4 {
+  font-family: 'Chelsea Market'
 }
-#banner h2 {
-  color: var(--color-secondary);
-  text-shadow: 3px 3px 0px #264653;
-  font-family: 'Chelsea Market';
-}
+
 #banner h2 span {
-  color: var(--color-primary);
-  text-shadow: 4px 4px 0px #264653;
-  font-family: 'Chelsea Market';
+  font-family: 'Chelsea Market'
 }
+
 button.explore {
   font-size: 20px;
-  padding: 15px 30px;
-
+  padding: 15px 30px
 }
-#sm-banner {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap;
 
-}
 #sm-banner .banner-box {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    background-image: url('images/banner/banner-yellow.jpeg');
-    min-width: 550px;
-    height: 50vh;
-    background-size: cover;
-    background-position: center;
-    padding: 30px;
-    border: 7px solid var(--color-secondary);
-
-}
-#sm-banner h4{
-  color: var(--color-white);
-  text-shadow: 4px 4px 0px #264653;
-}
-#sm-banner h2 {
-  color:var(--color-white);
-  text-shadow: 4px 4px 0px #264653;
-}
-#sm-banner .banner-box:hover button {
-  background: linear-gradient(45deg, transparent 5%, #2a9d8f 5%);
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-image: url('images/banner/banner-yellow.jpeg');
+  min-width: 550px;
+  height: 50vh;
+  padding: 30px
 }
 
-#sm-banner .banner-box2{
-  background-image: url('images/banner/bannersm7.jpg');
+#sm-banner .banner-box2 {
+  background-image: url('images/banner/bannersm7.jpg')
 }
 
 #banner3 {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding: 0 60px;
-  /* background-color: #E9C46A;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='152' height='152' viewBox='0 0 120 120'%3E%3Cpolygon fill='%23F6BA0A' fill-opacity='0.47' points='120 0 120 60 90 30 60 0 0 0 0 0 60 60 0 120 60 120 90 90 120 60 120 0'/%3E%3C/svg%3E"); */
+  padding: 0 60px
 }
 
-#banner3 .banner-box{
-  display: flex;
+#banner3 .banner-box {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   background-image: url('images/banner/bannersm8.png');
-  border: 7px solid var(--color-secondary);
-  min-width:30%;
+  min-width: 30%;
   height: 30vh;
-  background-size: cover;
-  background-position: center;
   padding: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 20px
 }
+
 #banner3 .banner-box2 {
-  background-image: url(images/banner/Vintage-rack.png);
+  background-image: url(images/banner/Vintage-rack.png)
 }
+
 #banner3 .banner-box3 {
-  background-image: url(images/banner/bannersm3.jpg);
+  background-image: url(images/banner/bannersm3.jpg)
 }
+
 #banner3 h2 {
   color: #fff;
-  font-weight: 900;
-  text-shadow: 4px 4px 0px #264653;
+  font-weight: 900
 }
-#banner3 h3 {
-  color: var(--color-white);
-  text-shadow: 3px 3px 0px #264653;
+
+#banner3 h3,
+#newsletter p span {
   font-weight: 800;
-  font-size: 18px;
+  font-size: 18px
 }
-#banner3 h3 span {
-  color: var(--color-secondary);
-}
-/* newsletter */
+
 #newsletter {
   display: flex;
   justify-content: space-between;
@@ -623,586 +726,232 @@ button.explore {
   align-items: center;
   background-image: url('images/banner/newsletter.png');
   background-position: 20% 30%;
-  background-repeat: no-repeat;
-  background-color: var(--color-blue-grey);
+  background-repeat: no-repeat
 }
+
 #newsletter h4 {
   font-size: 22px;
-  font-weight: 700;
-  color: var(--color-white);
+  font-weight: 700
 }
+
 #newsletter p {
   font-size: 16px;
   font-weight: 600;
-  color: var(--color-primary);
-  font-family: 'Chelsea Market';
+  font-family: 'Chelsea Market'
 }
+
 #newsletter p span {
-  font-size: 18px;
-  font-weight: 800;
-  color: var(--color-secondary);
-  font-family: 'Chelsea Market';
+  font-family: 'Chelsea Market'
 }
 
 #newsletter .form {
   display: flex;
   width: 40%;
-  justify-content: center;
-
+  justify-content: center
 }
+
 #newsletter input {
-  height:3.125rem;
-  padding: 0 1.25em ;
-  font-size:14px;
+  height: 3.125rem;
+  padding: 0 1.25em;
+  font-size: 14px;
   width: 100%;
   border: 1px solid transparent;
-  border-radius: 4px;
-  outline: none;
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-}
-.form-btn {
-  width: 140px;
-  height:3.125rem;
-  font-size: 18px;
-  font-weight: 600;
-  margin-top: 0px;
-  background: linear-gradient(45deg, transparent 5%, #2a9d8f 5%);
-}
-.form-btn:hover{
-  background: linear-gradient(45deg, transparent 5%, #e76f51 5%);
+  border-radius: 4px 0 0 4px;
+  outline: 0
 }
 
+.form-btn {
+  width: 140px;
+  height: 3.125rem;
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 0;
+  background: linear-gradient(45deg, transparent 5%, #2a9d8f 5%)
+}
+
+#cart-add,
 footer {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-
+  justify-content: space-between
 }
+
 footer .col {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-bottom: 20px;
+  margin-bottom: 20px
 }
 
 footer h4 {
- font-size: 14px;
- padding-bottom: 20px;
+  font-size: 14px;
+  padding-bottom: 20px
 }
 
+footer a,
 footer p {
   font-size: 13px;
-  margin: 0 0 8px 0;
+  margin: 0 0 8px
 }
 
 footer a {
-  font-size: 13px;
-  margin: 0 0 8px 0;
-  color:#222;
+  color: #222
 }
-footer .follow{
-  margin-top: 20px;
+
+footer .follow {
+  margin-top: 20px
 }
 
 footer .follow i {
-  color: var(--color-blue-grey);
-  padding-right:4px;
-  cursor: pointer;
+  padding-right: 4px;
+  cursor: pointer
 }
 
-footer.follow i:hover,
-footer a:hover {
-  color: var(--color-primary);
+#blog .blog-details a:hover,
+footer a:hover,
+footer.follow i:hover {
+  color: var(--color-primary)
 }
 
 footer .payment {
   display: flex;
-  flex-direction: row;
+  flex-direction: row
 }
 
 footer.install img {
- margin: 10px 0 15px 0;
+  margin: 10px 0 15px
 }
 
 footer.copyright {
   width: 100%;
-  text-align:center;
+  text-align: center
 }
 
-/* shop-page */
+#about-page-header,
+#cart-page-header,
 #shop-page-header {
   background-image: url(images/banner/psychedelic-banner.jpg);
   width: 100%;
   height: 40vh;
-  background-size:cover;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  padding: 14px;
+  padding: 14px
 }
 
+#about-page-header h2,
+#about-page-header h4,
+#cart-page-header h2,
 #shop-page-header h2,
- #shop-page-header h4 {
-  color: var(--color-white);
-  text-shadow: 2px 2px 0px #e76f51,
-    3px 3px 0px #e9c46a,
-    4px 4px 0px #f4a261,
-    5px 5px 0px #e76f51,
-    6px 6px 0px #264653,
-    6px 6px 0px #000000;
+#shop-page-header h4 {
   font-family: 'Chelsea Market';
-  font-weight: 900;
-  text-transform: uppercase;
+  font-weight: 900
 }
 
 #product-1.shop-products {
-  background-color: #E9C46A;
+  background-color: #e9c46a;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='152' height='152' viewBox='0 0 120 120'%3E%3Cpolygon fill='%23F6BA0A' fill-opacity='0.47' points='120 0 120 60 90 30 60 0 0 0 0 0 60 60 0 120 60 120 90 90 120 60 120 0'/%3E%3C/svg%3E");
-  padding: 40px 80px;
+  padding: 40px 80px
 }
 
 #pagination {
-  text-align: center;
+  text-align: center
 }
 
-#pagination a  {
-  background-color: var(--color-primary);
+#pagination a {
   padding: 15px 20px;
   border-radius: 4px;
-  color: var(--color-white);
-  font-weight: 600;
+  font-weight: 600
+}
+
+#cart table thead,
+#sub-total {
+  border: 4px solid var(--color-secondary)
 }
 
 #pagination a i {
   font-weight: 600;
-  font-size: 16px;
+  font-size: 16px
 }
-/* single-product page */
+
 #product-details {
   display: flex;
-  margin-top: 20px;
+  margin-top: 20px
 }
+
 #product-details .single-pro-image {
   width: 40%;
-  margin-right: 50px;
+  margin-right: 50px
 }
 
 .small-image-group {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between
 }
+
 .small-image-col {
   flex-basis: 25%;
   margin: 2px;
-  cursor: pointer;
-}
-#product-details .single-product-details {
-  width: 50%;
-  padding-top: 30px;
+  cursor: pointer
 }
 
+#product-details .single-product-details {
+  width: 50%;
+  padding-top: 30px
+}
+
+#about-header p,
 #product-details .single-product-details h6 {
   font-family: 'Chelsea Market';
-  color: var(--color-blue-grey);
+  color: var(--color-blue-grey)
 }
 
 #product-details .single-product-details h4 {
-  padding: 40px 0 20px 0;
-  font-family: 'Chelsea Market';
-  color: var(--color-blue-grey);
+  padding: 40px 0 20px;
+  font-family: 'Chelsea Market'
 }
 
 #product-details .single-product-details h2 {
- font-size: 26px;
- font-family: 'Chelsea Market';
- color: var(--color-blue-grey);
+  font-size: 26px;
+  font-family: 'Chelsea Market'
 }
-#product-details .single-product-details select{
- display: block;
- padding: 5px 10px;
- margin-bottom: 10px;
- font-family: 'Finlandica', sans-serif;
+
+#product-details .single-product-details select {
+  display: block;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  font-family: Finlandica, sans-serif
 }
-#product-details .single-product-details input{
- width: 40px;
- height: 47px;
- padding-left: 10px;
- font-size: 16px;
- margin-right: 10px;
- font-family: 'Finlandica', sans-serif;
+
+#product-details .single-product-details input {
+  width: 40px;
+  height: 47px;
+  padding-left: 10px;
+  font-size: 16px;
+  margin-right: 10px;
+  font-family: Finlandica, sans-serif
 }
+
 .value-btn-wrapper {
   display: flex;
-  flex-direction: column;
+  flex-direction: column
 }
 
 button.s-product-btn {
- width: 100px;
- height: 50px;
- font-size: 14px;
- line-height: 14px;
+  width: 100px;
+  height: 50px;
+  font-size: 14px;
+  line-height: 14px
 }
 
 #product-details .single-product-details span {
   line-height: 25px;
-  font-family: 'Chelsea Market';
-  color: var(--color-blue-grey);
+  font-family: 'Chelsea Market'
 }
 
-
-/* blog-page */
-
-#blog-page-header {
-  background-image: url(images/banner/blog-page-banner.jpg);
-  width: 100%;
-  height: 40vh;
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  padding: 14px;
-}
-
-#blog-page-header h2,
-#blog-page-header h4 {
-  color: var(--color-primary);
-  text-shadow: 3px 3px 0px #264653;
-  font-family: 'Chelsea Market';
-  font-weight: 900;
-  text-transform: uppercase;
-}
-
-.blog-details h4 {
-  color: var(--color-blue-grey);
-}
-
-.blog-details p {
-  color: var(--color-blue-grey);
-}
-
-#blog {
-  padding: 150px 150px 0 150px;
-}
-
-#blog .blog-box{
- display: flex;
- align-items: center;
- width: 100%;
- position: relative;
- padding-bottom: 90px;
-}
-
-
-#blog .blog-image {
-  width: 50%;
-  margin-right: 40px;
-}
-
-#blog img {
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
-}
-
-#blog .blog-details {
-  width: 50%;
-  background-image: url(images/blog/text-background.png);
-  background-size: cover;
-}
-
-#blog .blog-details:hover {
-  box-shadow: 10px -10px 0 -3px #fff, 10px -10px var(--color-secondary),
-      20px -20px 0 -3px #fff, 20px -20px var(--color-tertiary),
-      30px -30px 0 -3px #fff, 30px -30px var(--color-tangerine),
-      40px -40px 0 -3px #fff, 40px -40px var(--color-primary),
-      50px -50px 0 -3px #fff, 50px -50px var(--color-blue-grey);
-    transition: box-shadow 1s, top 1s, left 1s;
-}
-
-#blog .blog-details a {
-  font-size: 11px;
-  color: var(--color-blue-grey);
-  font-weight: 700;
-  position:relative ;
-  transition: 0.3s;
-}
-#blog .blog-details a::after {
-  content: "";
-  width: 50px;
-  height: 1px;
-  background-color: var(--color-blue-grey);
-  position: absolute;
-  top: 4px;
-  right: -60px;
-}
-
-#blog .blog-details a:hover {
-  color:var(--color-primary) ;
-}
-
-#blog .blog-details a:hover::after {
-  background-color: var(--color-primary);
-}
-
-#blog .blog-box h1{
-  position: absolute;
-  top: -40px;
-  left: 0;
-  font-size: 70px;
-  font-weight: 700;
-  color: var(--color-secondary);
-  text-shadow: 3px 3px 0px #e76f51,
-    5px 5px 0px #f4a261,
-    6px 6px 0px #e76f51,
-    7px 7px 0px #2a9d8f,
-    8px 8px 0px #264653,
-    9px 9px 0px #000000;
-  font-family: 'Chelsea Market';
-  z-index: 4;
-}
-/* about page  */
-#about-page-header {
-  background-image: url(images/banner/psychedelic-banner.jpg);
-  width: 100%;
-  height: 40vh;
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  padding: 14px;
-}
-#about-page-header h2,
-#about-page-header h4 {
-  color: var(--color-white);
-  text-shadow: 2px 2px 0px #e76f51,
-      3px 3px 0px #e9c46a,
-      4px 4px 0px #f4a261,
-      5px 5px 0px #e76f51,
-      6px 6px 0px #264653,
-      6px 6px 0px #000000;
-  font-family: 'Chelsea Market';
-  font-weight: 900;
-  text-transform: uppercase;
-}
-#about-header {
-  display: flex;
-  align-items: center;
-}
-
-
-#about-header img{
-  width:50%;
-  height: auto;
-
-}
-#about-header div {
-  padding-left: 40px;
-}
-#about-header h2 {
-  font-family: 'Chelsea Market';
-  font-weight: 900;
-  color: var(--color-blue-grey);
-}
-#about-header p {
-  font-family: 'Chelsea Market';
-  color: var(--color-blue-grey);
-}
-
-#about-header marquee {
-  font-family: 'Chelsea Market';
-  font-weight: 600;
-  color: var(--color-blue-grey);
-}
-
-#about-hero-1 {
-  background-image: url(images/about/TK-Quann-Dior-final-look.png);
-  height: 90vh;
-  width: 100%;
-  background-size: cover;
-  background-position: top 25% right 0;
-  padding: 0 80px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-}
-
-#about-hero-1 .about-hero-card-wrapper {
-  position: relative;
-  top: 40px;
-  left: 700px;
-  perspective: 40em;
-  display: grid;
-  transform-style: preserve-3d;
-}
-
-
-#about-hero-1 .about-card-text {
-  background-color: #f4a261;
-  width: 400px;
-  height: 350px;
-  text-align: center;
-  padding-top: 15px;
-  grid-area: 1 / 1;
-  transform: translateX(10px) rotateY(25deg) rotateX(10deg);
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
-  align-items: center;
-  padding: 30px;
-  backface-visibility: hidden;
-  box-shadow: 0 10px 30px -3px rgba(0, 0, 0, .1);
-}
-
-#about-hero-1 .about-hero-card-wrapper:before {
-  --bw: 9px;
-  grid-area: 1 / 1;
-  content: '';
-  backface-visibility: hidden;
-  height: 100%;
-  width: 100%;
-  margin-top: calc(-1 * var(--bw));
-  margin-left: calc(-1 * var(--bw));
-  background: transparent;
-  transform: translateX(-60px) rotateY(-30deg) rotateX(15deg) scale(1.03);
-  pointer-events: none;
-  border: var(--bw) solid #e9c46a;
-  box-sizing: content-box;
-}
-
-
-#about-hero-1 .about-hero-card-wrapper:hover>div,
-#about-hero-1 .about-hero-card-wrapper:hover:before {
-  transform: none;
-}
-
-#about-hero-1 .about-hero-card-wrapper>div,
-#about-hero-1 .about-hero-card-wrapper:before {
-  will-change: transform;
-  transition: .3s transform cubic-bezier(.25, .46, .45, 1);
-}
-
-#about-hero-1 h2 {
-  color: var(--color-primary);
-  font-family: 'Chelsea Market';
-}
-
-#about-hero-1 p {
-  color: var(--color-blue-grey);
-  font-family: 'Chelsea Market';
-}
-
-#about-hero-1 h4 {
-  padding-bottom: 15px;
-  color: var(--color-blue-grey);
-  font-size: 20px;
-  font-family: 'Chelsea Market';
-}
-
-#about-hero-2 {
-  background-image: url(images/about/Cipriana-Quann-Dior.png);
-  height: 90vh;
-  width: 100%;
-  background-size: cover;
-  background-position: top 25% right 0;
-  padding: 0 80px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-}
-#about-hero-2 .about-hero-card-wrapper {
-  position: relative;
-  top: 40px;
-  right: 60px;
-  perspective: 40em;
-  display: grid;
-  transform-style: preserve-3d;
-}
-
-
-#about-hero-2 .about-card-text {
-  background-color: #E9C46A;
-  width: 400px;
-  height: 350px;
-  text-align: center;
-  padding-top: 15px;
-  grid-area: 1 / 1;
-  transform: translateX(10px) rotateY(25deg) rotateX(10deg);
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
-  align-items: center;
-  padding: 30px;
-  backface-visibility: hidden;
-  box-shadow: 0 10px 30px -3px rgba(0, 0, 0, .1);
-}
-
-#about-hero-2 .about-hero-card-wrapper:before {
-  --bw: 9px;
-  grid-area: 1 / 1;
-  content: '';
-  backface-visibility: hidden;
-  height: 100%;
-  width: 100%;
-  margin-top: calc(-1 * var(--bw));
-  margin-left: calc(-1 * var(--bw));
-  background: transparent;
-  transform: translateX(-60px) rotateY(-30deg) rotateX(15deg) scale(1.03);
-  pointer-events: none;
-  border: var(--bw) solid #f4a261;
-  box-sizing: content-box;
-}
-
-
-#about-hero-2 .about-hero-card-wrapper:hover>div,
-#about-hero-2 .about-hero-card-wrapper:hover:before {
-  transform: none;
-}
-
-#about-hero-2 .about-hero-card-wrapper>div,
-#about-hero-2 .about-hero-card-wrapper:before {
-  will-change: transform;
-  transition: .3s transform cubic-bezier(.25, .46, .45, 1);
-}
-
-#about-hero-2 h2 {
-  color: var(--color-primary);
-  font-family: 'Chelsea Market';
-}
-
-#about-hero-2 p {
-  color: var(--color-blue-grey);
-  font-family: 'Chelsea Market';
-}
-
-#about-hero-2 h4 {
-  padding-bottom: 15px;
-  color: var(--color-blue-grey);
-  font-size: 20px;
-  font-family: 'Chelsea Market';
-}
-
-#about-hero-3 {
-  background-image: url(images/about/Quann-Sisters-Dior-Getting-ready.png);
-  height: 90vh;
-  width: 100%;
-  background-size: cover;
-  background-position: top 25% right 0;
-  padding: 0 80px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-}
-
-
-
-/* contact page */
+#blog-page-header,
 #contact-page-header {
   background-image: url(images/banner/blog-page-banner.jpg);
   width: 100%;
@@ -1212,631 +961,687 @@ button.s-product-btn {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  padding: 14px;
+  padding: 14px
 }
+
+#blog-page-header h2,
+#blog-page-header h4,
 #contact-page-header h2 {
   color: var(--color-primary);
-  text-shadow: 3px 3px 0px #264653;
+  text-shadow: 3px 3px 0 #264653;
   font-family: 'Chelsea Market';
   font-weight: 900;
-  text-transform: uppercase;
-
+  text-transform: uppercase
 }
- #contact-details {
+
+#blog {
+  padding: 150px 150px 0
+}
+
+#blog .blog-box {
   display: flex;
   align-items: center;
-  justify-content: space-between;
- }
+  width: 100%;
+  position: relative;
+  padding-bottom: 90px
+}
 
- #contact-details .details {
-  width: 40%;
-  color: var(--color-blue-grey);
- }
+#blog .blog-image {
+  width: 50%;
+  margin-right: 40px
+}
 
- #contact-details .details span,
- #form-details span {
- font-size: 12px;
- font-family: 'Chelsea Market';
- }
+#blog img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover
+}
 
- #contact-details .details h2,
- #form-details span{
- font-size: 24px;
- line-height: 35px;
- padding: 20px 0;
- font-family: 'Chelsea Market';
+#blog .blog-details {
+  width: 50%;
+  background-image: url(images/blog/text-background.png);
+  background-size: cover
+}
 
- }
+#about-hero-1 .about-card-text,
+#about-hero-2 .about-card-text {
+  width: 400px;
+  height: 350px;
+  box-shadow: 0 10px 30px -3px rgba(0, 0, 0, .1);
+  grid-area: 1/1;
+  backface-visibility: hidden;
+  text-align: center;
+  padding: 30px
+}
 
- #contact-details .details h3 {
- font-size: 16px;
- padding-bottom: 16px;
- font-family: 'Chelsea Market';
- }
+#blog .blog-details:hover {
+  box-shadow: 10px -10px 0 -3px #fff, 10px -10px var(--color-secondary), 20px -20px 0 -3px #fff, 20px -20px var(--color-tertiary), 30px -30px 0 -3px #fff, 30px -30px var(--color-tangerine), 40px -40px 0 -3px #fff, 40px -40px var(--color-primary), 50px -50px 0 -3px #fff, 50px -50px var(--color-blue-grey);
+  transition: box-shadow 1s, top 1s, left 1s
+}
 
- #contact-details .details li {
- padding: 10px 0;
- list-style: none;
- display: flex;
- }
+#blog .blog-details a {
+  font-size: 11px;
+  font-weight: 700;
+  position: relative;
+  transition: .3s
+}
 
- #contact-details .details li i{
- font-size: 14px;
- padding-right:22px;
+#blog .blog-details a::after {
+  content: "";
+  width: 50px;
+  height: 1px;
+  position: absolute;
+  top: 4px;
+  right: -60px
+}
 
- }
- #contact-details .details li i p{
- margin: 0;
- font-size: 14px;
+#blog .blog-box h1 {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  font-size: 70px;
+  font-weight: 700;
+  color: var(--color-secondary);
+  text-shadow: 3px 3px 0 #e76f51, 5px 5px 0 #f4a261, 6px 6px 0 #e76f51, 7px 7px 0 #2a9d8f, 8px 8px 0 #264653, 9px 9px 0 #000;
+  font-family: 'Chelsea Market';
+  z-index: 4
+}
 
- }
- #contact-details .details map{
-  width:55% ;
-  height: 400px;
+#about-header {
+  display: flex;
+  align-items: center
+}
 
- }
- #contact-details .details map iframe{
-  width:100% ;
+#about-header img {
+  width: 50%;
+  height: auto
+}
+
+#about-header div {
+  padding-left: 40px
+}
+
+#about-header h2 {
+  font-family: 'Chelsea Market';
+  font-weight: 900
+}
+
+#about-header marquee {
+  font-family: 'Chelsea Market';
+  font-weight: 600
+}
+
+#about-hero-1 {
+  background-image: url(images/about/TK-Quann-Dior-final-look.png);
+  width: 100%;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center
+}
+
+#about-hero-1 .about-hero-card-wrapper {
+  top: 40px;
+  left: 700px;
+  display: grid
+}
+
+#about-hero-1 .about-card-text {
+  background-color: #f4a261;
+  transform: translateX(10px) rotateY(25deg) rotateX(10deg);
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center
+}
+
+#about-hero-2 {
+  background-image: url(images/about/Cipriana-Quann-Dior.png);
+  width: 100%;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center
+}
+
+#about-hero-2 .about-hero-card-wrapper {
+  position: relative;
+  top: 40px;
+  right: 60px;
+  perspective: 40em;
+  display: grid;
+  transform-style: preserve-3d
+}
+
+#about-hero-2 .about-card-text {
+  background-color: #e9c46a;
+  transform: translateX(10px) rotateY(25deg) rotateX(10deg);
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center
+}
+
+#about-hero-2 .about-hero-card-wrapper:before {
+  grid-area: 1/1;
+  backface-visibility: hidden;
   height: 100%;
+  width: 100%;
+  background: 0 0;
+  border: var(--bw) solid #f4a261
+}
 
- }
+#about-hero-3 {
+  background-image: url(images/about/Quann-Sisters-Dior-Getting-ready.png);
+  width: 100%;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center
+}
 
- #form-details {
+#contact-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between
+}
+
+#contact-details .details {
+  width: 40%
+}
+
+#contact-details .details span,
+#form-details span {
+  font-size: 12px;
+  font-family: 'Chelsea Market'
+}
+
+#contact-details .details h2,
+#form-details span {
+  font-size: 24px;
+  line-height: 35px;
+  padding: 20px 0;
+  font-family: 'Chelsea Market'
+}
+
+#contact-details .details h3 {
+  font-size: 16px;
+  padding-bottom: 16px;
+  font-family: 'Chelsea Market'
+}
+
+#contact-details .details li {
+  padding: 10px 0;
+  list-style: none;
+  display: flex
+}
+
+#contact-details .details li i {
+  font-size: 14px;
+  padding-right: 22px
+}
+
+#contact-details .details li i p {
+  margin: 0;
+  font-size: 14px
+}
+
+#contact-details .details map {
+  width: 55%;
+  height: 400px
+}
+
+#contact-details .details map iframe {
+  width: 100%;
+  height: 100%
+}
+
+#form-details {
   display: flex;
   justify-content: space-between;
   margin: 30px;
-  padding:80px;
-  border: 3px solid var(--color-blue-grey);
- }
+  padding: 80px;
+  border: 3px solid var(--color-blue-grey)
+}
 
-
- #form-details form {
- width: 65%;
- display: flex;
- flex-direction: column;
- align-items: flex-start;
- color: var(--color-blue-grey);
- font-family: 'Chelsea Market';
- padding-left: 25px;
-
- }
-
- #form-details h2 {
-  color: var(--color-blue-grey);
+#form-details form {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   font-family: 'Chelsea Market';
- }
+  padding-left: 25px
+}
 
- #form-details form input,
- #form-details form textarea {
+#form-details form input,
+#form-details form textarea {
   padding: 12px 15px;
   width: 100%;
   margin-bottom: 20px;
-  outline: none;
-  border: 1px solid var(--color-blue-grey);
- }
- #form-details form button {
-  margin: 0 5px 10px 8px;
- }
+  outline: 0;
+  border: 1px solid var(--color-blue-grey)
+}
 
-  #form-details form button:hover {
-   background: linear-gradient(45deg, transparent 5%, #2a9d8f 5%);
- }
+#form-details form button {
+  margin: 0 5px 10px 8px
+}
 
-  #form-details .staff div {
-    padding-bottom: 25px;
-    display: flex;
-    align-items: flex-start;
-  }
+#form-details .staff div {
+  padding-bottom: 25px;
+  display: flex;
+  align-items: flex-start
+}
 
-  #form-details .staff div img {
-    width: 65px;
-    height: 65px;
-    object-fit: cover;
-    margin-right: 15px;
+#form-details .staff div img {
+  width: 65px;
+  height: 65px;
+  object-fit: cover;
+  margin-right: 15px
+}
 
-  }
+#form-details .staff div p {
+  margin: 0;
+  font-size: 13px;
+  line-height: 25px
+}
 
-  #form-details .staff div p {
-    margin: 0;
-    font-size: 13px;
-    line-height: 25px;
-  }
+#form-details .staff div p span {
+  display: block;
+  font-size: 16px;
+  font-weight: 600
+}
 
-  #form-details .staff div p span {
-     display: block;
-     font-size: 16px;
-     font-weight: 600;
-     color: var(--color-blue-grey);
-  }
+#cart table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  white-space: nowrap
+}
 
-  /* cart page  */
+#cart table img {
+  width: 70px
+}
 
-  #cart-page-header {
-    background-image: url(images/banner/psychedelic-banner.jpg);
-    width: 100%;
-    height: 40vh;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    padding: 14px;
-  }
+#cart table td:first-child {
+  width: 100px;
+  text-align: center
+}
 
-  #cart-page-header h2 {
-    color: var(--color-white);
-      text-shadow: 2px 2px 0px #e76f51,
-        3px 3px 0px #e9c46a,
-        4px 4px 0px #f4a261,
-        5px 5px 0px #e76f51,
-        6px 6px 0px #264653,
-        6px 6px 0px #000000;
-      font-family: 'Chelsea Market';
-      font-weight: 900;
-      text-transform: uppercase;
-  }
+#cart table td:nth-child(2),
+#cart table td:nth-child(4),
+#cart table td:nth-child(5),
+#cart table td:nth-child(6) {
+  width: 150px;
+  text-align: center
+}
 
-  #cart table {
-    width: 100%;
-    border-collapse: collapse;
-    table-layout: fixed;
-    white-space: nowrap;
+#cart table td:nth-child(3) {
+  width: 250px;
+  text-align: center
+}
 
-  }
-
-  #cart table img {
-    width: 70px;
-  }
-
-  #cart table td:nth-child(1) {
-    width: 100px;
-    text-align: center;
-  }
-  #cart table td:nth-child(2) {
-    width: 150px;
-    text-align: center;
-  }
-  #cart table td:nth-child(3) {
-    width: 250px;
-    text-align: center;
-  }
-
- #cart table td:nth-child(4),
- #cart table td:nth-child(5),
- #cart table td:nth-child(6)
-  {
-       width: 150px;
-       text-align: center;
-     }
-
- #cart table td:nth-child(5) input {
+#cart table td:nth-child(5) input {
   width: 70px;
   padding: 10px 5px 10px 15px;
-  border: 1px solid var(--color-tangerine);
- }
+  border: 1px solid var(--color-tangerine)
+}
 
- .far {
-   color: var(--color-blue-grey);
-  }
-
- #cart table thead {
-  border: 4px solid var(--color-secondary);
+#cart table thead {
   border-left: none;
-  border-right: none;
- }
+  border-right: none
+}
 
- #cart table thead td {
+#cart table thead td {
   font-size: 13px;
   font-weight: 700;
   text-transform: uppercase;
-  padding: 18px 0;
- }
-  #cart table tbody tr td {
-    padding-top: 15px;
-  }
+  padding: 18px 0
+}
 
-  #cart table tbody td {
-   font-size: 13px;
-  }
+#cart table tbody tr td {
+  padding-top: 15px
+}
 
- #cart-add {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
- }
- #coupon {
+#cart table tbody td {
+  font-size: 13px
+}
+
+#coupon {
   width: 50%;
-  padding-bottom: 30px;
- }
- #coupon h3,
- #sub-total h3 {
-  padding-bottom: 15px;
-  font-family: 'Chelsea Market';
-  color: var(--color-blue-grey);
- }
- #coupon input {
-  padding: 10px 20px;
-  outline: none;
-  width: 60%;
-  margin-right:10px;
-  border:1px solid var(--color-tangerine);
- }
+  padding-bottom: 30px
+}
 
- #sub-total {
+#coupon h3,
+#sub-total h3 {
+  padding-bottom: 15px;
+  font-family: 'Chelsea Market'
+}
+
+#coupon input {
+  padding: 10px 20px;
+  outline: 0;
+  width: 60%;
+  margin-right: 10px;
+  border: 1px solid var(--color-tangerine)
+}
+
+#sub-total {
   width: 50%;
   margin-bottom: 30px;
-  padding:30px;
-  border: 4px solid var(--color-secondary);
+  padding: 30px
+}
 
+#sub-total table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 20px
+}
 
- }
- #sub-total td {
-    color: var(--color-blue-grey);
- }
-  #sub-total table {
-    border-collapse: collapse;
-    width: 100%;
-    margin-bottom: 20px;
-  }
+@media (max-width:799px) {
 
-
-/* media */
- /* navbar */
-  @media (max-width:799px) {
-    .section-p1 {
-        padding: 40px 40px;
-      }
-    #navbar {
-      display: flex;
-      align-items: flex-start;
-      flex-direction: column;
-      justify-content: flex-start;
-      position: fixed;
-      top: 0 ;
-      right: -300px;
-      height: 100vh;
-      width: 300px;
-      background-color: var(--color-secondary);
-      box-shadow: 0 40px 60px rgba(0, 0, 0, .1);
-      transition: 0.3s;
-    }
-
-    #navbar.active {
-      right:0;
-    }
-
-     #navbar li {
-      margin-bottom: 25px;
-     }
-
-      #mobile {
-       display: flex;
-       align-items: center;
-     }
-
-   #mobile i  {
-      color: var(--color-blue-grey);
-      font-size: 24px;
-      padding-left:20px ;
-     }
-
-   #close {
-    top: 30px;
-    left: 30px;
+  #close,
+  #mobile i {
     color: var(--color-blue-grey);
     font-size: 24px;
-    display: flex;
-    padding-left: 20px;
-
-   }
-   #lg-bag{
-     display: none;
-   }
-   /* hero */
-   #hero {
-    padding: 0 100px;
+    padding-left: 20px
   }
-  /* features */
-  #feature {
-   justify-content: center;
-   display: flex;
+
+  #close,
+  #feature,
+  #mobile,
+  #navbar {
+    display: flex
   }
- #feature .feature-box {
-   margin: 15px 15px;
- }
-     /* banner */
- #banner {
-   height: 20vh;
- }
 
- #sm-banner .banner-box {
-   min-width: 100%;
-   height: 30vh;
-   padding: 30px;
+  .section-p1 {
+    padding: 40px
+  }
 
- }
+  #navbar {
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: fixed;
+    top: 0;
+    right: -300px;
+    height: 100vh;
+    width: 300px;
+    background-color: var(--color-secondary);
+    box-shadow: 0 40px 60px rgba(0, 0, 0, .1);
+    transition: .3s
+  }
 
- #banner3 {
-   padding: 0 40px;
- }
- #banner3 .banner-box {
-  width: 28%;
-  margin: 20px 10px;
- }
- /* newsletter */
- #newsletter .form {
-   width: 70%;
+  #navbar.active {
+    right: 0
+  }
 
- }
- /* about page */
- #about-header img {
-   height: 30vh;
- }
+  #navbar li {
+    margin-bottom: 25px
+  }
+
+  #mobile {
+    align-items: center
+  }
+
+  #close {
+    top: 30px;
+    left: 30px
+  }
+
+  #lg-bag {
+    display: none
+  }
 
   #about-hero-1,
   #about-hero-2,
-  #about-hero-3 {
-    padding: 0 100px;
+  #about-hero-3,
+  #hero {
+    padding: 0 100px
+  }
+
+  #feature {
+    justify-content: center
+  }
+
+  #feature .feature-box {
+    margin: 15px
+  }
+
+  #banner {
+    height: 20vh
+  }
+
+  #sm-banner .banner-box {
+    min-width: 100%;
+    height: 30vh;
+    padding: 30px
+  }
+
+  #banner3 {
+    padding: 0 40px
+  }
+
+  #banner3 .banner-box {
+    width: 28%;
+    margin: 20px 10px
+  }
+
+  #newsletter .form {
+    width: 70%
+  }
+
+  #about-header img {
+    height: 30vh
   }
 
   #about-hero-1 .about-hero-card-wrapper,
   #about-hero-2 .about-hero-card-wrapper {
-      position: relative;
-      top: 40px;
-      right: 10px;
-      left:0px;
+    position: relative;
+    top: 40px;
+    right: 10px;
+    left: 0
   }
-  /* contact page  */
 
   #form-details {
-    padding: 60px;
+    padding: 60px
   }
 
   #form-details form {
-    width: 50%;
+    width: 50%
   }
-  /* Cart Page */
 
   #cart {
-    overflow-x: auto;
+    overflow-x: auto
   }
 }
 
- @media (max-width:477px) {
+@media (max-width:477px) {
+
+  #blog .blog-box,
+  #product-details {
+    display: flex;
+    flex-direction: column
+  }
+
+  #product-1.new-arrivals,
+  #product-1.shop-products,
+  #sub-total,
   .section-p1 {
-      padding: 20px;
-    }
-  /* navbar */
+    padding: 20px
+  }
+
   #header {
-    padding: 10px 30px;
+    padding: 10px 30px
   }
- .logo span {
+
+  .logo span {
     line-height: 1.4;
-    padding: 0 10px;
+    padding: 0 10px
   }
- /* hero */
+
+  #about-hero-1,
+  #about-hero-2,
+  #about-hero-3,
   #hero {
-  padding: 0 20px;
-  background-position:55%;
+    padding: 0 20px;
+    background-position: 55%
   }
 
   h1 {
-   font-size: 32px;
+    font-size: 32px
   }
+
   h2 {
-   font-size: 28px;
+    font-size: 28px
   }
+
+  #banner3 .banner-box,
+  #blog .blog-details,
+  #contact-details .map,
+  #coupon,
+  #newsletter .form,
+  .about-card-text,
   .card-text {
-   width: 100%;
+    width: 100%
   }
+
   button {
-   font-size: 20px;
+    font-size: 20px;
     height: 100px;
-    margin-top: 10px;
+    margin-top: 10px
   }
-    /* features */
+
   #feature .feature-box {
     width: 155px;
-    margin: 0 5px 15px 5px;
+    margin: 0 5px 15px
+  }
+
+  #blog .blog-image,
+  #product-details .single-pro-image {
+    margin-right: 0;
+    width: 100%
   }
 
   #feature .feature-box:hover {
-   box-shadow: 10px -10px 0 -3px #fff, 10px -10px var(--color-tangerine),
-     20px -20px 0 -3px #fff, 20px -20px var(--color-primary);
+    box-shadow: 10px -10px 0 -3px #fff, 10px -10px var(--color-tangerine), 20px -20px 0 -3px #fff, 20px -20px var(--color-primary)
   }
+
   .featured-products .product:hover .product-content {
-   transform: translate(0, 3.5rem);
+    transform: translate(0, 3.5rem)
   }
 
   .featured-products .product:hover .image-box {
-   transform: translate(0, -3.5rem);
+    transform: translate(0, -3.5rem)
   }
 
   .product-content {
-   width: 300px;
-   border: none;
+    width: 300px;
+    border: none
   }
 
   #product-1 .product .description {
-     text-align:center;
+    text-align: center
   }
 
-  #online-order h6 {
-   margin-top: 20px;
-  }
-
-  #product-1.new-arrivals {
-   padding: 20px;
-  }
- /* banner */
-  #banner {
-   height: 40vh;
-  }
-
-  #sm-banner .banner-box {
-   height: 40vh;
-  }
-
+  #online-order h6,
   #sm-banner .banner-box2 {
-   margin-top: 20px;
+    margin-top: 20px
+  }
+
+  #banner,
+  #sm-banner .banner-box {
+    height: 40vh
   }
 
   #banner3 {
-    padding: 0 20px;
+    padding: 0 20px
   }
-
-  #banner3 .banner-box {
-   width: 100%;
-  }
-
- /* newsletter */
 
   #newsletter {
-   padding: 40px 20px;
+    padding: 40px 20px
   }
 
-  #newsletter .form {
-   width: 100%;
-  }
   .form-btn {
-    font-size: 16px;
+    font-size: 16px
   }
 
- /* footer */
   footer .copyright {
-    text-align: start;
+    text-align: start
   }
 
-  /* single product page */
- #product-details {
-  display: flex;
-  flex-direction: column;
-}
+  #product-details .single-product-details {
+    width: 100%;
+    padding-top: 30px
+  }
 
- #product-details .single-pro-image {
-  width: 100%;
-  margin-right: 0px;
-}
-
- #product-details .single-product-details {
-  width: 100%;
-  padding-top: 30px;
-}
-
- /* Shop page  */
-
- #product-1.shop-products {
-  padding: 20px;
- }
- /* Blog page */
   #blog {
-   padding: 100px 20px 0 20px;
- }
+    padding: 100px 20px 0
+  }
 
- #blog .blog-box {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    }
+  #blog .blog-box {
+    align-items: flex-start
+  }
 
   #blog .blog-image {
-  width: 100%;
-  margin-right: 0;
-  margin-bottom: 30px;
- }
+    margin-bottom: 30px
+  }
 
   #blog img {
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
- }
-
-  #blog .blog-details {
-  width: 100%;
- }
-
- /* About Page  */
-
- #about-header {
-  flex-direction: column;
- }
- #about-header img {
-  width: 100%;
-  margin-bottom: 20px;
- }
-
- #about-header div {
-   padding-left: 0px;
- }
-
- #about-hero-1,
- #about-hero-2,
- #about-hero-3 {
-  padding: 0 20px;
-  background-position: 55%;
- }
-
- #about-hero-1 .about-hero-card-wrapper,
- #about-hero-2 .about-hero-card-wrapper {
- display: none;
- }
-
- .about-card-text{
-  width: 100%;
- }
-
- /* Contact Page */
-
- #contact-details {
-  flex-direction: column;
- }
-
- #contact-details .details {
-  width:100%;
-  margin-bottom: 30px;
- }
-
- #contact-details  .map {
-  width: 100% ;
- }
-
- #form-details {
-  margin:10px;
-  padding:30px 10px;
-  flex-wrap: wrap;
-  width: 100%;
- }
-
- #form-details form {
-  width: 100%;
-  margin-bottom: 30px;
- }
-#form-details button {
-  width: 120px;
-  height: 60px;
-  font-size: 18px;
-}
-    /* Cart Page */
-  #cart-add {
-  flex-direction: column ;
-   }
-  #coupon {
-   width: 100%;
+    width: 100%;
+    height: 300px;
+    object-fit: cover
   }
+
+  #about-header,
+  #cart-add,
+  #contact-details {
+    flex-direction: column
+  }
+
+  #about-header img {
+    width: 100%;
+    margin-bottom: 20px
+  }
+
+  #about-header div {
+    padding-left: 0
+  }
+
+  #about-hero-1 .about-hero-card-wrapper,
+  #about-hero-2 .about-hero-card-wrapper {
+    display: none
+  }
+
+  #contact-details .details,
+  #form-details form {
+    width: 100%;
+    margin-bottom: 30px
+  }
+
+  #form-details {
+    margin: 10px;
+    padding: 30px 10px;
+    flex-wrap: wrap;
+    width: 100%
+  }
+
+  #form-details button,
+  #sub-total button {
+    width: 120px;
+    height: 60px;
+    font-size: 18px
+  }
+
   #coupon button {
     width: 90px;
     height: 50px;
-    font-size: 18px;
+    font-size: 18px
   }
 
   #sub-total {
-    width: 100%;
-    padding: 20px;
+    width: 100%
   }
-  #sub-total button {
-  width: 120px;
-  height: 60px;
-  font-size: 18px;
-  }
-
- }
+}
